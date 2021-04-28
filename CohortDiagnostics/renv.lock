@@ -9,12 +9,44 @@
     ]
   },
   "Packages": {
+    "Andromeda": {
+      "Package": "Andromeda",
+      "Version": "0.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "82bb353ad62826fb68d8a2244b7dc0b4"
+    },
     "BH": {
       "Package": "BH",
       "Version": "1.75.0-0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e4c04affc2cac20c8fec18385cd14691"
+    },
+    "CirceR": {
+      "Package": "CirceR",
+      "Version": "1.0.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "CirceR",
+      "RemoteUsername": "ohdsi",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "6284978bb125ea2268b2013c6a1feaf167712947",
+      "Hash": "d4da8ab75aa7b1b6aaf00fd13c33f16f"
+    },
+    "CohortDiagnostics": {
+      "Package": "CohortDiagnostics",
+      "Version": "2.1.0",
+      "Source": "GitHub",
+      "Remotes": "ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/ROhdsiWebApi,\nohdsi/CirceR",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "CohortDiagnostics",
+      "RemoteUsername": "OHDSI",
+      "RemoteRef": "develop",
+      "RemoteSha": "302894f4c99f345ef9bbdb720768b22e523b0b53",
+      "Hash": "44c41ac84402e7e6345742dd853f978d"
     },
     "DBI": {
       "Package": "DBI",
@@ -29,6 +61,30 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "d8fea683d387c35a2f20d14cd03329df"
+    },
+    "Eunomia": {
+      "Package": "Eunomia",
+      "Version": "1.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "Eunomia",
+      "RemoteUsername": "ohdsi",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "52d61768e31de9f1d62a7680962bce97a8a3fa71",
+      "Hash": "e2c5fa5ea2e9afacd1eb8d0fbdd152a7"
+    },
+    "FeatureExtraction": {
+      "Package": "FeatureExtraction",
+      "Version": "3.1.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "FeatureExtraction",
+      "RemoteUsername": "ohdsi",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "7e615050508bd1915e8437cf98fceacacbda4b9c",
+      "Hash": "eab7151ab5fba6eea939b46c551e2ef1"
     },
     "OhdsiSharing": {
       "Package": "OhdsiSharing",
@@ -77,10 +133,17 @@
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "ROhdsiWebApi",
-      "RemoteUsername": "OHDSI",
+      "RemoteUsername": "ohdsi",
       "RemoteRef": "HEAD",
       "RemoteSha": "db363a4e5d77dfa1a68267a9e1e4697ec46c02f1",
-      "Hash": "c832a0f1ce4bdb41d1ec1f49b10a1483"
+      "Hash": "341498d513594ab31ce969dc02390351"
+    },
+    "RSQLite": {
+      "Package": "RSQLite",
+      "Version": "2.2.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "71f19d00a7736b24492fb26b483bc450"
     },
     "Rcpp": {
       "Package": "Rcpp",
@@ -137,6 +200,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "9fe98599ca456d6552421db0d6772d8f"
+    },
+    "blob": {
+      "Package": "blob",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "9addc7e2c5954eca5719928131fed98c"
     },
     "brew": {
       "Package": "brew",
@@ -228,6 +298,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "2b7d10581cc730804e9ed178c8374bd6"
+    },
+    "dbplyr": {
+      "Package": "dbplyr",
+      "Version": "2.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1f37fa4ab2f5f7eded42f78b9a887182"
     },
     "desc": {
       "Package": "desc",
@@ -411,6 +488,13 @@
       "Repository": "CRAN",
       "Hash": "3d5108641f47470611a32d0bdf357a72"
     },
+    "later": {
+      "Package": "later",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b61890ae77fea19fc8acadd25db70aa4"
+    },
     "lifecycle": {
       "Package": "lifecycle",
       "Version": "1.0.0",
@@ -501,6 +585,20 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "463642747f81879e6752485aefb831cf"
+    },
+    "plogr": {
+      "Package": "plogr",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "09eb987710984fc2905c7129c7d85e65"
+    },
+    "pool": {
+      "Package": "pool",
+      "Version": "0.1.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "adbd1934555da2c62338acd48ad957f5"
     },
     "praise": {
       "Package": "praise",
