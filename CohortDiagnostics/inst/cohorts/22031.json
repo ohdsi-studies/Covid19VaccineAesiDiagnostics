@@ -767,6 +767,23 @@
           },
           "includeMapped": false,
           "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4096099,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "25114006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Phlebitis of deep veins of lower extremity",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         }
       ]},
       "name": "AESI_Deep Vein Thrombosis_narrow",

@@ -3,7 +3,7 @@
   "description": "Cohort diagnostics on Thrombosis With Thrombocytopenia Syndrome cohorts.",
   "skeletonVersin": "v0.0.1",
   "version": "v0.1.0",
-  "createdDate": 18745,
+  "createdDate": 18747,
   "skeletontype": "CohortDiagnosticsStudy",
   "createdBy": "rao@ohdsi.org",
   "cohortDefinitions": [
@@ -4596,6 +4596,23 @@
                   "CONCEPT_CODE": "62583006",
                   "VOCABULARY_ID": "SNOMED",
                   "CONCEPT_NAME": "Puerperal phlegmasia alba dolens",
+                  "DOMAIN_ID": "Condition",
+                  "STANDARD_CONCEPT_CAPTION": "Standard",
+                  "CONCEPT_CLASS_ID": "Clinical Finding",
+                  "INVALID_REASON": "V"
+                },
+                "includeMapped": false,
+                "includeDescendants": false
+              },
+              {
+                "isExcluded": false,
+                "concept": {
+                  "INVALID_REASON_CAPTION": "Valid",
+                  "CONCEPT_ID": 4096099,
+                  "STANDARD_CONCEPT": "S",
+                  "CONCEPT_CODE": "25114006",
+                  "VOCABULARY_ID": "SNOMED",
+                  "CONCEPT_NAME": "Phlebitis of deep veins of lower extremity",
                   "DOMAIN_ID": "Condition",
                   "STANDARD_CONCEPT_CAPTION": "Standard",
                   "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -11858,7 +11875,7 @@
     }
   ],
   "name": "Thrombosis With Thrombocytopenia Syndrome cohorts - an OHDSI network study",
-  "modifiedDate": 18745,
+  "modifiedDate": 18747,
   "modifiedBy": "rao@ohdsi.org",
   "id": 1,
   "packageName": "ThrombosisWithThrombocytopeniaSyndrome"
