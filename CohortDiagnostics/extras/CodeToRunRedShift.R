@@ -1,12 +1,12 @@
-# source(Sys.getenv("startUpScriptLocation"))
-# connectionSpecifications <- cdmSources %>% dplyr::filter(sequence == 1) %>% dplyr::filter(database ==
-#                                                                                             "truven_ccae")
+source(Sys.getenv("startUpScriptLocation"))
+connectionSpecifications <- cdmSources %>% dplyr::filter(sequence == 1) %>% dplyr::filter(database ==
+                                                                                            "optum_extended_dod")
 
 library(ThrombosisWithThrombocytopeniaSyndrome)
 
 # The folder where the study intermediate and result files will be written:
 outputFolder <-
-        file.path("D:/temp/", connectionSpecifications$database)
+        file.path("output", connectionSpecifications$database)
 # unlink(x = outputFolder, recursive = TRUE, force = TRUE)
 # dir.create(path = outputFolder, showWarnings = FALSE, recursive = TRUE)
 
@@ -39,9 +39,9 @@ cohortTable <-
                "_",
                "ThrombosisWithThrombocytopeniaSyndrome")
 
-# dataSouceInformation <- getDataSourceInformation(connectionDetails = connectionDetails,
-#                                                  cdmDatabaseSchema = cdmDatabaseSchema,
-#                                                  vocabDatabaseSchema = vocabDatabaseSchema)
+dataSouceInformation <- getDataSourceInformation(connectionDetails = connectionDetails,
+                                                 cdmDatabaseSchema = cdmDatabaseSchema,
+                                                 vocabDatabaseSchema = vocabDatabaseSchema)
 
 execute(
         connectionDetails = connectionDetails,
