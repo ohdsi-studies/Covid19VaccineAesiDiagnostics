@@ -3,7 +3,7 @@
   "description": "Adverse Events of Special Interest related to Covid 19 vaccination",
   "skeletonVersin": "v0.0.1",
   "version": "v0.1.0",
-  "createdDate": 18749,
+  "createdDate": 18750,
   "skeletontype": "CohortDiagnosticsStudy",
   "createdBy": "rao@ohdsi.org",
   "cohortDefinitions": [
@@ -58255,7 +58255,7 @@
     }
   ],
   "name": "Adverse Events of Special Interest related to Covid 19 vaccination - an OHDSI network study",
-  "modifiedDate": 18749,
+  "modifiedDate": 18750,
   "modifiedBy": "rao@ohdsi.org",
   "id": 1,
   "packageName": "ThrombosisWithThrombocytopeniaSyndrome"
