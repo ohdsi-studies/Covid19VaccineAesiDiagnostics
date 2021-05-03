@@ -1,0 +1,50 @@
+atlasId,cohortId,id,cohortName
+1,1,1,[TwT] new thrombocytopenia with thrombosis diagnosis (Splenic infarction)
+2,2,2,[TwT] new thrombocytopenia with thrombosis diagnosis (Mesenteric vein thrombosis)
+3,3,3,[TwT] new thrombosis (Intestinal infarction)
+4,4,4,[TwT] new thrombosis (Splenic infarction)
+5,5,5,[TwT] new thrombosis (Mesenteric vein thrombosis)
+6,6,6,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
+7,7,7,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events
+8,8,8,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 150) events
+9,9,9,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 120) events
+10,10,10,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events
+11,11,11,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
+12,12,12,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
+13,13,13,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 120) events
+14,14,14,[TwT] new thrombocytopenia with thrombosis diagnosis (CSVT-Broad)
+15,15,15,[TwT] new thrombocytopenia with thrombosis diagnosis (CSVT-narrow)
+16,16,16,[TwT] new thrombosis (PE-Narrow)
+17,17,17,[TwT] new thrombocytopenia with thrombosis diagnosis (DVT-Broad)
+18,18,18,[TwT] new thrombosis (Hepatic thrombosis)
+19,19,19,[TwT] new thrombocytopenia with thrombosis diagnosis (DVT-narrow)
+20,20,20,[TwT] new thrombocytopenia with thrombosis diagnosis (PE)
+21,21,21,[TwT] new thrombocytopenia with thrombosis diagnosis (Hepatic thrombosis)
+22,22,22,[TwT] new thrombocytopenia with thrombosis diagnosis (Splenic thrombosis)
+23,23,23,[TwT] new thrombosis (Splenic thrombosis)
+24,24,24,"[TwT] new thrombocytopenia with thrombosis diagnosis (Intraabdominal-Visceral venous, portal vein)"
+25,25,25,"[TwT] new thrombosis ((Intraabdominal-Visceral venous, portal vein))"
+26,26,26,"[TwT] new thrombocytopenia with thrombosis diagnosis (Intraabdominal-vein of trunk, pelvic vein )"
+27,27,27,[TwT] new thrombocytopenia with thrombosis diagnosis (ischemic stroke)
+28,28,28,"[TwT] new thrombosis (Intraabdominal-vein of trunk, pelvic vein )"
+29,29,29,[TwT] new thrombocytopenia with thrombosis diagnosis (Hemorrhagic Stroke)
+30,30,30,[TwT] new thrombosis (Ischemic stroke)
+31,31,31,[TwT] new thrombocytopenia with thrombosis diagnosis (Myocardial infarction)
+32,32,32,[TwT] new thrombosis (Hemorrhagic stroke)
+33,33,33,[TwT] new thrombocytopenia with thrombosis diagnosis (Intestinal infarction)
+34,34,34,[TwT] new thrombosis (MI)
+35,35,35,FDA AESI Narcolepsy events
+36,36,36,FDA AESI Anaphylaxis events
+37,37,37,FDA AESI Bells palsy events
+38,38,38,FDA AESI Encephalomyelitis IP events
+39,39,39,FDA AESI Guillain Barre syndrome IP events
+40,40,40,FDA AESI Acute myocardial infarction IP events
+41,41,41,FDA AESI Myocarditis Pericarditis events
+42,42,42,FDA AESI Immune thrombocytopenia (ITP) events
+43,43,43,FDA AESI Disseminated intravascular coagulation events
+44,44,44,FDA AESI Appendicitis events
+45,45,45,FDA AESI Transverse myelitis events
+46,46,46,FDA AESI Hemorrhagic stroke IP events with conceptset subsuming FDA source concepts
+47,47,47,FDA AESI Deep Vein Thrombosis (DVT) events with conceptset subsuming FDA source concepts
+48,48,48,FDA AESI non-hemorrhagic stroke IP events with conceptset subsuming FDA source concepts
+49,49,49,FDA AESI Pulmonary Embolism events with conceptset subsuming FDA source concepts
