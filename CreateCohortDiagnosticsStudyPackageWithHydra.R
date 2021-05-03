@@ -32,7 +32,7 @@ webApi1Cohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWe
   dplyr::mutate(baseUrl = baseUrlWebApi1)
 
 baseUrlWebApi2 <- Sys.getenv("baseUrlAtlasOhdsiOrg")
-bearerToken <- "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb2hvcnRkaWFnbm9zdGljc0BnbWFpbC5jb20iLCJleHAiOjE2MjAwNDI4Mjl9.QUNh57xaW9xExggsCK_1MioPapJGy0iGs-mON_S_uuwucKn3ZpHf_DD4v8cAhxD4eGMLVgfM3JmGYK5LvFrGBA"
+# bearerToken <- ""
 ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi2, authHeader = bearerToken)
 cohortIdsInWebApi2 <- c(340,	349,	386,	347,	402,	385,	346,	343,	405,	335,	339,	345,	406,	411,	381)
 webApi2Cohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi2) %>% 

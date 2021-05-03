@@ -1,12 +1,15 @@
-source(Sys.getenv("startUpScriptLocation"))
-connectionSpecifications <- cdmSources %>% dplyr::filter(sequence == 1) %>% dplyr::filter(database ==
-                                                                                            "optum_extended_dod")
+############### Note this is a custom script, a version of CodeToRun.R that may not work for everyone ##############
+############### Please use CodeToRun.R ############################################################################
+
+# source(Sys.getenv("startUpScriptLocation"))
+# connectionSpecifications <- cdmSources %>% dplyr::filter(sequence == 1) %>% dplyr::filter(database ==
+#                                                                                             "truven_ccae")
 
 library(ThrombosisWithThrombocytopeniaSyndrome)
 
 # The folder where the study intermediate and result files will be written:
 outputFolder <-
-        file.path("output", connectionSpecifications$database)
+        file.path("D:/temp/", connectionSpecifications$database)
 # unlink(x = outputFolder, recursive = TRUE, force = TRUE)
 # dir.create(path = outputFolder, showWarnings = FALSE, recursive = TRUE)
 
