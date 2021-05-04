@@ -1,6 +1,6 @@
 # Get cohorts from WebApi
 baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
-# bearerToken <- ""
+# BearerToken <- ""
 ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
   dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |

@@ -9,7 +9,7 @@ library(ThrombosisWithThrombocytopeniaSyndrome)
 
 # The folder where the study intermediate and result files will be written:
 outputFolder <-
-        file.path("D:/data/studyResults/TwT", connectionSpecifications$database)
+        file.path("D:/temp/", connectionSpecifications$database)
 # unlink(x = outputFolder, recursive = TRUE, force = TRUE)
 dir.create(path = outputFolder, showWarnings = TRUE, recursive = TRUE)
 
