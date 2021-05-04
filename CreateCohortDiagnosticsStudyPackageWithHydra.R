@@ -31,7 +31,7 @@ for (i in (1:nrow(studyCohorts))) {
                 ROhdsiWebApi::getCohortDefinition(cohortId = studyCohorts$id[[i]],
                                                   baseUrl = baseUrlWebApi)
         cohortDefinitionsArray[[i]] <- list(
-                id = i,
+                id = studyCohorts$id[[i]],
                 createdDate = studyCohorts$createdDate[[i]],
                 modifiedDate = studyCohorts$createdDate[[i]],
                 logicDescription = studyCohorts$description[[i]],
