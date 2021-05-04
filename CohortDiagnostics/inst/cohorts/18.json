@@ -11,11 +11,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4223098,
+          "CONCEPT_ID": 314381,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "83940008",
+          "CONCEPT_CODE": "75053002",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Hepatic artery thrombosis",
+          "CONCEPT_NAME": "Acute febrile mucocutaneous lymph node syndrome",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -28,11 +28,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4301208,
+          "CONCEPT_ID": 3.561512E7,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "38739001",
+          "CONCEPT_CODE": "16025471000119107",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Hepatic vein thrombosis",
+          "CONCEPT_NAME": "Aneurysm of coronary artery due to and following acute febrile mucocutaneous lymph node syndrome",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -40,44 +40,10 @@
         },
         "includeMapped": false,
         "includeDescendants": true
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4111853,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "195343000",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Embolism and thrombosis of hepatic artery",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 196715,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "82385007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Budd-Chiari syndrome",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
       }
     ]},
-    "name": "[Vaccine AESI] Intraabdominal thrombosis - hepatic",
-    "id": 1
+    "name": "Kawasaki's disease",
+    "id": 0
   }],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
@@ -86,43 +52,58 @@
   "cdmVersionRange": ">=5.0.0",
   "CensoringCriteria": [],
   "QualifiedLimit": {"Type": "All"},
-  "InclusionRules": [{
-    "expression": {
-      "CriteriaList": [{
-        "RestrictVisit": false,
-        "StartWindow": {
-          "UseEventEnd": false,
-          "Start": {
-            "Days": 365,
-            "Coeff": -1
+  "InclusionRules": [
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": 365,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
           },
-          "End": {
-            "Days": 1,
-            "Coeff": -1
-          },
-          "UseIndexEnd": false
-        },
-        "IgnoreObservationPeriod": true,
-        "Criteria": {"ConditionOccurrence": {
-          "ConditionTypeExclude": false,
-          "CodesetId": 1
-        }},
-        "Occurrence": {
-          "Type": 0,
-          "IsDistinct": false,
-          "Count": 0
-        }
-      }],
-      "Type": "ALL",
-      "DemographicCriteriaList": [],
-      "Groups": []
+          "IgnoreObservationPeriod": true,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 0
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": []
+      },
+      "name": "has no events in prior 'clean window' - 365 days"
     },
-    "name": "has no events in prior 'clean window' - 365 days"
-  }],
+    {
+      "expression": {
+        "CriteriaList": [],
+        "Type": "ALL",
+        "DemographicCriteriaList": [{"Age": {
+          "Op": "bt",
+          "Extent": 5,
+          "Value": 1
+        }}],
+        "Groups": []
+      },
+      "name": "ages 1 to 5"
+    }
+  ],
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 1
+      "CodesetId": 0
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {

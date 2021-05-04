@@ -11,11 +11,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671289E7,
+          "CONCEPT_ID": 4329847,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "143551000119106",
+          "CONCEPT_CODE": "22298006",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Chronic thrombosis of splenic vein",
+          "CONCEPT_NAME": "Myocardial infarction",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -28,11 +28,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4033521,
+          "CONCEPT_ID": 4108680,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "14534009",
+          "CONCEPT_CODE": "194868001",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Splenic vein thrombosis",
+          "CONCEPT_NAME": "Thrombosis of atrium, auricular appendage, and ventricle due to and following acute myocardial infarction",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -45,11 +45,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.561506E7,
+          "CONCEPT_ID": 4108678,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "15972701000119106",
+          "CONCEPT_CODE": "194862000",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombosis of splenic artery",
+          "CONCEPT_NAME": "Hemopericardium due to and following acute myocardial infarction",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -62,11 +62,113 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671289E7,
+          "CONCEPT_ID": 438172,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "143561000119108",
+          "CONCEPT_CODE": "194863005",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Acute thrombosis of splenic vein",
+          "CONCEPT_NAME": "Atrial septal defect due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4124687,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "233847009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cardiac rupture due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.576621E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "703326006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Mitral valve regurgitation due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.710991E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "723858002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Ventricular aneurysm due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.710991E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "723859005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Pulmonary embolism due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.710991E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "723860000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Arrhythmia due to and following acute myocardial infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 314666,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1755008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Old myocardial infarction",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -76,8 +178,8 @@
         "includeDescendants": true
       }
     ]},
-    "name": "[Vaccine AESI] Intraabdominal thrombosis - splenic",
-    "id": 2
+    "name": "Myocardial Infarction and complication",
+    "id": 3
   }],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
@@ -105,7 +207,7 @@
         "IgnoreObservationPeriod": true,
         "Criteria": {"ConditionOccurrence": {
           "ConditionTypeExclude": false,
-          "CodesetId": 2
+          "CodesetId": 3
         }},
         "Occurrence": {
           "Type": 0,
@@ -122,7 +224,7 @@
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 2
+      "CodesetId": 3
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {

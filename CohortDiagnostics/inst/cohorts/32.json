@@ -11,147 +11,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 439847,
+          "CONCEPT_ID": 4102202,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "1386000",
+          "CONCEPT_CODE": "192759008",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Intracranial hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 432923,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "21454007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Subarachnoid hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 376713,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "274100004",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Cerebral hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4148906,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "270907008",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Spontaneous subarachnoid hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4144154,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "425957003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Non-traumatic intracerebral ventricular hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4111709,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "195176009",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Non-traumatic subdural hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.253543E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "291581000119109",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Acute nontraumatic subdural hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.353073E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "291591000119107",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Subacute non-traumatic intracranial subdural hemorrhage",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4174299,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "276647007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Perinatal intracranial hemorrhage",
+          "CONCEPT_NAME": "Cerebral venous sinus thrombosis",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -164,11 +28,11 @@
         "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671654E7,
+          "CONCEPT_ID": 4062269,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "722581000",
+          "CONCEPT_CODE": "200259003",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Fetal or neonatal non-traumatic intraventricular hemorrhage",
+          "CONCEPT_NAME": "Cerebral venous thrombosis in pregnancy",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -181,11 +45,11 @@
         "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4345688,
+          "CONCEPT_ID": 4066234,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "240313004",
+          "CONCEPT_CODE": "200260008",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Intracerebral hemorrhage in fetus or newborn",
+          "CONCEPT_NAME": "Cerebral venous thrombosis in the puerperium",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -198,72 +62,89 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.353073E7,
+          "CONCEPT_ID": 4111714,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "291571000119106",
+          "CONCEPT_CODE": "195230003",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Spontaneous cerebral hemorrhage",
+          "CONCEPT_NAME": "Cerebral infarction due to cerebral venous thrombosis, non-pyogenic",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       },
       {
-        "isExcluded": false,
+        "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4108952,
+          "CONCEPT_ID": 4061473,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "195155004",
+          "CONCEPT_CODE": "200258006",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Subarachnoid hemorrhage from carotid siphon and bifurcation",
+          "CONCEPT_NAME": "Obstetric cerebral venous thrombosis",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       },
       {
-        "isExcluded": false,
+        "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4111708,
+          "CONCEPT_ID": 4273550,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "195160000",
+          "CONCEPT_CODE": "63795001",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Subarachnoid hemorrhage from vertebral artery",
+          "CONCEPT_NAME": "Thrombosis of intracranial venous sinus of pregnancy AND/OR puerperium",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       },
       {
-        "isExcluded": false,
+        "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.560903E7,
+          "CONCEPT_ID": 3.671759E7,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "1078001000000105",
+          "CONCEPT_CODE": "722930000",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Haemorrhagic stroke",
+          "CONCEPT_NAME": "Neonatal thrombosis of cerebral venous sinus",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.576544E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "702374000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neonatal noninfectious cerebral venous sinus thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
       }
     ]},
-    "name": "TWT_Hemorrhagic stroke",
+    "name": "non pregnancy related CVST_ narrow",
     "id": 2
   }],
   "EndStrategy": {"DateOffset": {

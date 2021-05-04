@@ -1,7 +1,15 @@
+# Get cohorts from WebApi
+baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
+# bearerToken <- ""
+ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
+studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
+  dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |
+                  .data$id %in% c(331:349, 380:411))
+
+##########################################
 #remotes::install_github("OHDSI/Hydra")
 outputFolder <- "CohortDiagnostics"  # location where you study package will be created
 library(magrittr)
-
 
 ########## Please populate the information below #####################
 version <- "v0.1.0"
@@ -16,36 +24,12 @@ skeletonType <- "CohortDiagnosticsStudy"
 organizationName <- "OHDSI"
 description <- "Adverse Events of Special Interest related to Covid 19 vaccination"
 
-# Get cohorts from multiple WebApi
-cohortIdsInWebApi1 <- c(22040, 22042, 22041, 22039, 22038,
-                        22037, 22036, 22035, 22034, 22033,
-                        22031, 22032, 22030, 22028, 22029,
-                        22134, 22133, 22132, 22131, 22130,
-                        22129, 22128, 22127, 22126, 22125,
-                        22124, 22123,
-                        22134:22141)
-baseUrlWebApi1 <- Sys.getenv("baseUrlUnsecure")
-
-# get cohorts from one webapi
-webApi1Cohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi1) %>%
-        dplyr::filter(.data$id %in% cohortIdsInWebApi1) %>% 
-  dplyr::mutate(baseUrl = baseUrlWebApi1)
-
-baseUrlWebApi2 <- Sys.getenv("baseUrlAtlasOhdsiOrg")
-# bearerToken <- ""
-ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi2, authHeader = bearerToken)
-cohortIdsInWebApi2 <- c(340,	349,	386,	347,	402,	385,	346,	343,	405,	335,	339,	345,	406,	411,	381)
-webApi2Cohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi2) %>% 
-  dplyr::filter(.data$id %in% cohortIdsInWebApi2) %>% 
-  dplyr::mutate(baseUrl = baseUrlWebApi2)
-
-studyCohorts <- dplyr::bind_rows(webApi1Cohorts, webApi2Cohorts)
 # compile them into a data table
 cohortDefinitionsArray <- list()
 for (i in (1:nrow(studyCohorts))) {
         cohortDefinition <-
                 ROhdsiWebApi::getCohortDefinition(cohortId = studyCohorts$id[[i]],
-                                                  baseUrl = studyCohorts$baseUrl[[i]])
+                                                  baseUrl = baseUrlWebApi)
         cohortDefinitionsArray[[i]] <- list(
                 id = i,
                 createdDate = studyCohorts$createdDate[[i]],
@@ -116,13 +100,17 @@ Hydra::hydrate(specifications = hydraSpecificationFromFile,
 
 unlink(x = tempFolder, recursive = TRUE, force = TRUE)
 
+saveRDS(object = specifications, file = 'specifications.rds')
+
+# regenerate from file
+# specifications <- readRDS(file = 'specifications.rds')
 
 specifications <- list(studyCohorts = studyCohorts,
               cohortDefinitionsArray = cohortDefinitionsArray,
               specifications = specifications,
               hydraSpecificationFromFile = hydraSpecificationFromFile)
 
-saveRDS(object = specifications, file = 'specifications.rds')
+
 ##############################################################
 ##############################################################
 ######       Build, install and execute package           #############

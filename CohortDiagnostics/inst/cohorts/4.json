@@ -5,52 +5,128 @@
     "EraPad": 0
   },
   "CensorWindow": {},
-  "ConceptSets": [{
-    "expression": {"items": [
-      {
+  "ConceptSets": [
+    {
+      "expression": {"items": [{
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4048527,
+          "CONCEPT_ID": 443904,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "123617004",
+          "CONCEPT_CODE": "16631009",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Fleckmilz",
+          "CONCEPT_NAME": "Transverse myelopathy syndrome",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4044745,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "22996003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Splenic infarction",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+        "includeDescendants": true
+      }]},
+      "name": "Transverse Myelitis",
+      "id": 4
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 262,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "ERIP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
         },
-        "includeMapped": false,
-        "includeDescendants": false
-      }
-    ]},
-    "name": "[EB] Splenic infarction - diagnosis",
-    "id": 5
-  }],
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 9201,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "IP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 9203,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "ER",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Emergency Room Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Inpatient or Emergency Room visit",
+      "id": 5
+    }
+  ],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
     "Offset": 1
   }},
   "cdmVersionRange": ">=5.0.0",
   "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [{
+      "RestrictVisit": false,
+      "StartWindow": {
+        "UseEventEnd": false,
+        "Start": {"Coeff": -1},
+        "End": {
+          "Days": 0,
+          "Coeff": 1
+        },
+        "UseIndexEnd": false
+      },
+      "IgnoreObservationPeriod": false,
+      "EndWindow": {
+        "UseEventEnd": true,
+        "Start": {
+          "Days": 0,
+          "Coeff": -1
+        },
+        "End": {"Coeff": 1},
+        "UseIndexEnd": false
+      },
+      "Criteria": {"VisitOccurrence": {
+        "CodesetId": 5,
+        "VisitTypeExclude": false
+      }},
+      "Occurrence": {
+        "Type": 2,
+        "IsDistinct": false,
+        "Count": 1
+      }
+    }],
+    "Type": "ALL",
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
   "QualifiedLimit": {"Type": "All"},
   "InclusionRules": [{
     "expression": {
@@ -70,8 +146,44 @@
         },
         "IgnoreObservationPeriod": true,
         "Criteria": {"ConditionOccurrence": {
+          "CorrelatedCriteria": {
+            "CriteriaList": [{
+              "RestrictVisit": false,
+              "StartWindow": {
+                "UseEventEnd": false,
+                "Start": {"Coeff": -1},
+                "End": {
+                  "Days": 0,
+                  "Coeff": 1
+                },
+                "UseIndexEnd": false
+              },
+              "IgnoreObservationPeriod": false,
+              "EndWindow": {
+                "UseEventEnd": true,
+                "Start": {
+                  "Days": 0,
+                  "Coeff": -1
+                },
+                "End": {"Coeff": 1},
+                "UseIndexEnd": false
+              },
+              "Criteria": {"VisitOccurrence": {
+                "CodesetId": 5,
+                "VisitTypeExclude": false
+              }},
+              "Occurrence": {
+                "Type": 2,
+                "IsDistinct": false,
+                "Count": 1
+              }
+            }],
+            "Type": "ALL",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
           "ConditionTypeExclude": false,
-          "CodesetId": 5
+          "CodesetId": 4
         }},
         "Occurrence": {
           "Type": 0,
@@ -88,7 +200,7 @@
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 5
+      "CodesetId": 4
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {

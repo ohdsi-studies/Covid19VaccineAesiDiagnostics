@@ -5,247 +5,692 @@
     "EraPad": 0
   },
   "CensorWindow": {},
-  "ConceptSets": [
-    {
-      "expression": {"items": [
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.739754E7,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "718196002",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Beta thalassemia X-linked thrombocytopenia syndrome",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4195665,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "312607004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Gastrointestinal tract vascular insufficiency",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 432870,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "302215000",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Thrombocytopenic disorder",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        }
-      ]},
-      "name": "Thrombocytopenia",
-      "id": 1
-    },
-    {
-      "expression": {"items": [
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3007461,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "26515-7",
-            "VOCABULARY_ID": "LOINC",
-            "CONCEPT_NAME": "Platelets [#/volume] in Blood",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Lab Test",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4148299,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "30588004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Ischemic colitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3031586,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "49497-1",
-            "VOCABULARY_ID": "LOINC",
-            "CONCEPT_NAME": "Platelets [#/volume] in Blood by Estimate",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Lab Test",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4173167,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "276500007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Mesenteric embolus",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3024929,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "777-3",
-            "VOCABULARY_ID": "LOINC",
-            "CONCEPT_NAME": "Platelets [#/volume] in Blood by Automated count",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Lab Test",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4317289,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "95446005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Thrombosis of mesenteric vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3039827,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "40574-6",
-            "VOCABULARY_ID": "LOINC",
-            "CONCEPT_NAME": "Platelets [#/volume] in Body fluid by Automated count",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Lab Test",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4319280,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "22323009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute bowel infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3024386,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "776-5",
-            "VOCABULARY_ID": "LOINC",
-            "CONCEPT_NAME": "Platelet mean volume [Entitic volume] in Blood by Rees-Ecker",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Lab Test",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4144032,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "307420006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Mesenteric thrombus and/or embolus",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4267147,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "61928009",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Platelet count",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Procedure",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.575741E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "133421000119101",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute thrombosis of mesenteric vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.739386E7,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "1022651000000100",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Platelet count",
-            "DOMAIN_ID": "Measurement",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Observable Entity",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        }
-      ]},
-      "name": "Platelet measurement",
-      "id": 2
-    },
-    {
-      "expression": {"items": [
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.671289E7,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "143551000119106",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Chronic thrombosis of splenic vein",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.575741E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "133411000119108",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Chronic thrombosis of mesenteric vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4033521,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "14534009",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Splenic vein thrombosis",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.481174E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "906201000000100",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute ischaemia of large intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.561506E7,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "15972701000119106",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Thrombosis of splenic artery",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.481174E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "906191000000102",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute ischaemia of small intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
         },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.671289E7,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "143561000119108",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Acute thrombosis of splenic vein",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        }
-      ]},
-      "name": "[Vaccine AESI] Intraabdominal thrombosis - splenic",
-      "id": 34
-    }
-  ],
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.711779E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "734041006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Insufficiency of mesenteric artery",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.70162E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "14720231000119109",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Epiploic appendagitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.562208E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "763398006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Nongangrenous ischemic colitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.562208E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "763397001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Gangrenous ischemic colitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4345926,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "241154007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Abdominal angina",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4342767,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235845003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Transient ischemic colitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4341648,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235851008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Hemorrhagic infarction of intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4341646,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235842000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Occlusive mesenteric ischemia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4340939,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235843005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Non-occlusive mesenteric ischemia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4340378,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235852001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Transmural infarction of intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4340375,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "235844004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Focal segmental ischemia of small intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4318537,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "95538007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Large bowel gangrene",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4318407,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "95447001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Thrombophlebitis of mesenteric vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4240850,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "5820008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute ischemic enterocolitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4239942,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "57658009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Embolic mesenteric infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4237654,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "90891007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Ischemic enterocolitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4215949,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "72150009",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Nonocclusive intestinal infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4214720,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "80475003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Thrombotic mesenteric infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4192856,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "75700000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute ischemic colitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4188336,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "46882000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Chronic ischemic enterocolitis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4174014,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "297140006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Inferior mesenteric artery embolus",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4149013,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "3558002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Mesenteric infarction",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4148257,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "266520007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Chronic gastrointestinal tract vascular insufficiency",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4148256,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "266519001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute GIT vascular insufficiency",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4124856,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "234041004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Inferior mesenteric vein thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4055089,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "197001004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Superior mesenteric vein thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4055025,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "196999001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Superior mesenteric artery embolus",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4045408,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "13026000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Ischemic stricture of intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 201894,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "91489000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Acute vascular insufficiency of intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 192673,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "82196007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Vascular insufficiency of intestine",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      }
+    ]},
+    "name": "[EB] Intestinal infarction",
+    "id": 4
+  }],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
     "Offset": 1
@@ -253,349 +698,44 @@
   "cdmVersionRange": ">=5.0.0",
   "CensoringCriteria": [],
   "QualifiedLimit": {"Type": "All"},
-  "InclusionRules": [
-    {
-      "expression": {
-        "CriteriaList": [
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": 90,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": -1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "Criteria": {"Measurement": {
-              "MeasurementTypeExclude": false,
-              "CodesetId": 2,
-              "ValueAsNumber": {
-                "Op": "bt",
-                "Extent": 150,
-                "Value": 10
-              },
-              "Unit": [
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 8686,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "mm3",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "cubic millimeter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 8785,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "/mm3",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "per cubic millimeter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 8848,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "10*3/uL",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "thousand per microliter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 8961,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "10*3/mm3",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "thousand per cubic millimeter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 9444,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "10*9/L",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "billion per liter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 9254,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "/L",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "per liter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                },
-                {
-                  "INVALID_REASON_CAPTION": "Unknown",
-                  "CONCEPT_ID": 8816,
-                  "STANDARD_CONCEPT": null,
-                  "CONCEPT_CODE": "10*6/mL",
-                  "VOCABULARY_ID": "UCUM",
-                  "CONCEPT_NAME": "million per milliliter",
-                  "DOMAIN_ID": "Unit",
-                  "STANDARD_CONCEPT_CAPTION": "Unknown",
-                  "CONCEPT_CLASS_ID": null,
-                  "INVALID_REASON": null
-                }
-              ]
-            }},
-            "Occurrence": {
-              "Type": 0,
-              "IsDistinct": false,
-              "Count": 0
-            }
+  "InclusionRules": [{
+    "expression": {
+      "CriteriaList": [{
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 365,
+            "Coeff": -1
           },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": 90,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": -1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "Criteria": {"Measurement": {
-              "MeasurementTypeExclude": false,
-              "RangeLowRatio": {
-                "Op": "lt",
-                "Value": 1
-              },
-              "CodesetId": 2,
-              "ValueAsNumber": {
-                "Op": "gt",
-                "Value": 10
-              },
-              "RangeLow": {
-                "Op": "bt",
-                "Extent": 170,
-                "Value": 130
-              }
-            }},
-            "Occurrence": {
-              "Type": 0,
-              "IsDistinct": false,
-              "Count": 0
-            }
+          "End": {
+            "Days": 1,
+            "Coeff": -1
           },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": 90,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 1,
-                "Coeff": -1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "Criteria": {"ConditionOccurrence": {
-              "ConditionTypeExclude": false,
-              "CodesetId": 1
-            }},
-            "Occurrence": {
-              "Type": 0,
-              "IsDistinct": false,
-              "Count": 0
-            }
-          }
-        ],
-        "Type": "ALL",
-        "DemographicCriteriaList": [],
-        "Groups": []
-      },
-      "name": "has no events in prior 'clean window' - 90 days"
-    },
-    {
-      "expression": {
-        "CriteriaList": [{
-          "RestrictVisit": false,
-          "StartWindow": {
-            "UseEventEnd": false,
-            "Start": {
-              "Days": 7,
-              "Coeff": -1
-            },
-            "End": {
-              "Days": 7,
-              "Coeff": 1
-            },
-            "UseIndexEnd": false
-          },
-          "IgnoreObservationPeriod": false,
-          "Criteria": {"ConditionOccurrence": {
-            "ConditionTypeExclude": false,
-            "CodesetId": 34
-          }},
-          "Occurrence": {
-            "Type": 2,
-            "IsDistinct": false,
-            "Count": 1
-          }
-        }],
-        "Type": "ANY",
-        "DemographicCriteriaList": [],
-        "Groups": []
-      },
-      "name": "clinical presentation of Splenic thrombosis"
-    }
-  ],
-  "PrimaryCriteria": {
-    "CriteriaList": [
-      {"Measurement": {
-        "MeasurementTypeExclude": false,
-        "CodesetId": 2,
-        "ValueAsNumber": {
-          "Op": "bt",
-          "Extent": 150,
-          "Value": 10
+          "UseIndexEnd": false
         },
-        "Unit": [
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 8848,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "10*3/uL",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "thousand per microliter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 8961,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "10*3/mm3",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "thousand per cubic millimeter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 8785,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "/mm3",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "per cubic millimeter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 8686,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "mm3",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "cubic millimeter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 9444,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "10*9/L",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "billion per liter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 9254,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "/L",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "per liter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          },
-          {
-            "INVALID_REASON_CAPTION": "Unknown",
-            "CONCEPT_ID": 8816,
-            "STANDARD_CONCEPT": null,
-            "CONCEPT_CODE": "10*6/mL",
-            "VOCABULARY_ID": "UCUM",
-            "CONCEPT_NAME": "million per milliliter",
-            "DOMAIN_ID": "Unit",
-            "STANDARD_CONCEPT_CAPTION": "Unknown",
-            "CONCEPT_CLASS_ID": null,
-            "INVALID_REASON": null
-          }
-        ]
-      }},
-      {"Measurement": {
-        "MeasurementTypeExclude": false,
-        "RangeLowRatio": {
-          "Op": "lt",
-          "Value": 1
-        },
-        "CodesetId": 2,
-        "ValueAsNumber": {
-          "Op": "gt",
-          "Value": 10
-        },
-        "RangeLow": {
-          "Op": "bt",
-          "Extent": 170,
-          "Value": 130
+        "IgnoreObservationPeriod": true,
+        "Criteria": {"ConditionOccurrence": {
+          "ConditionTypeExclude": false,
+          "CodesetId": 4
+        }},
+        "Occurrence": {
+          "Type": 0,
+          "IsDistinct": false,
+          "Count": 0
         }
-      }},
-      {"ConditionOccurrence": {
-        "ConditionTypeExclude": false,
-        "CodesetId": 1
-      }}
-    ],
+      }],
+      "Type": "ALL",
+      "DemographicCriteriaList": [],
+      "Groups": []
+    },
+    "name": "has no events in prior 'clean window' - 365 days"
+  }],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "CodesetId": 4
+    }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {
       "PostDays": 0,

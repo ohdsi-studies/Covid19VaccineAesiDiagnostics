@@ -11,11 +11,45 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4159749,
+          "CONCEPT_ID": 4102202,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "371106008",
+          "CONCEPT_CODE": "192759008",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Idiopathic maternal thrombocytopenia",
+          "CONCEPT_NAME": "Cerebral venous sinus thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4062269,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "200259003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cerebral venous thrombosis in pregnancy",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4066234,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "200260008",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cerebral venous thrombosis in the puerperium",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -28,11 +62,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4103532,
+          "CONCEPT_ID": 318137,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "2897005",
+          "CONCEPT_CODE": "192753009",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Immune thrombocytopenia",
+          "CONCEPT_NAME": "Phlebitis and thrombophlebitis of intracranial sinuses",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -45,11 +79,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4119134,
+          "CONCEPT_ID": 4111714,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "302873008",
+          "CONCEPT_CODE": "195230003",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombocytopenic purpura",
+          "CONCEPT_NAME": "Cerebral infarction due to cerebral venous thrombosis, non-pyogenic",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -57,10 +91,95 @@
         },
         "includeMapped": false,
         "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4061473,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "200258006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Obstetric cerebral venous thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4273550,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "63795001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Thrombosis of intracranial venous sinus of pregnancy AND/OR puerperium",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4.576544E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "702374000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neonatal noninfectious cerebral venous sinus thrombosis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 3.671759E7,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "722930000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Neonatal thrombosis of cerebral venous sinus",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4045733,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "230689003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Cerebrovascular and spinal vascular disorders",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
       }
     ]},
-    "name": "Idiopathic and Immune Thrombocytopenia",
-    "id": 0
+    "name": "cerebral venous sinus thrombosis (CVST broad)",
+    "id": 2
   }],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
@@ -88,7 +207,7 @@
         "IgnoreObservationPeriod": true,
         "Criteria": {"ConditionOccurrence": {
           "ConditionTypeExclude": false,
-          "CodesetId": 0
+          "CodesetId": 2
         }},
         "Occurrence": {
           "Type": 0,
@@ -105,7 +224,7 @@
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 0
+      "CodesetId": 2
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {

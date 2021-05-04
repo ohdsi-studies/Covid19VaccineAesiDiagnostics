@@ -1,0 +1,1726 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 262,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "ERIP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 9201,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "IP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Inpatient or Inpatient/ER visit",
+      "id": 1
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560581E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.349",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555281E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.50",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.523",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral anterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559621E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.332",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555281E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.442",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554319E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.421",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555755E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.321",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55384E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.521",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.543",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral cerebellar arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554803E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.219",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.553346E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.522",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.213",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral vertebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55721E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.132",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55721E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.211",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554803E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.29",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of other precerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558178E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.439",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557689E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.322",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558659E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.412",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.513",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral middle cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560104E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.00",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified precerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560105E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.49",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of other cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55721E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.449",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55866E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.512",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556719E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.339",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.533",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral posterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557689E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.419",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556236E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.019",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559147E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.30",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558178E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.541",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.033",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral carotid arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554319E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.239",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.313",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral middle cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.113",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral vertebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.553839E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.039",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55528E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.422",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560581E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.19",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of other precerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55384E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.22",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of basilar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.520782E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.6",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to cerebral venous thrombosis, nonpyogenic",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "4-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.233",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of bilateral carotid arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.013",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral vertebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559622E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.542",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558178E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.12",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of basilar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554319E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.342",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.333",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral posterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560581E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.511",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.433",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral posterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557688E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.139",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.553346E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.09",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of other precerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55384E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.111",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556237E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.411",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556719E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.312",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.133",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral carotid arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560104E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.231",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right carotid arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555755E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.529",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557689E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.331",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556236E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.032",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559621E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.131",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55866E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.531",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of right posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556719E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.10",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified precerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558659E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.341",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556237E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.232",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left carotid arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554803E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.431",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559148E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.549",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.556236E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.119",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560104E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.011",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554803E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.319",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1595597,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.81",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Other cerebral infarction due to occlusion or stenosis of small artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557689E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.39",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of other cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554319E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.329",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of unspecified anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55866E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.539",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.443",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral cerebellar arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55528E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.20",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified precerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.559621E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.429",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified anterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.558178E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.031",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right carotid artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555755E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.311",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of right middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.343",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral cerebellar arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560105E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.59",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of other cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555756E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.532",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55528E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.40",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of unspecified cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.553346E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.012",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of left vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.520782E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.9",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction, unspecified",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "4-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.554803E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.432",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left posterior cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.72005E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.323",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of bilateral anterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.423",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral anterior cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.55528E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.02",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to thrombosis of basilar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.557689E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.212",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of left vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560104E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.441",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of right cerebellar artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.560105E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.519",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to unspecified occlusion or stenosis of unspecified middle cerebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.720051E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.413",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of bilateral middle cerebral arteries",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.555755E7,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.112",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Cerebral infarction due to embolism of left vertebral artery",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "6-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1595598,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "I63.89",
+            "VOCABULARY_ID": "ICD10CM",
+            "CONCEPT_NAME": "Other cerebral infarction",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "5-char billing code",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "non-hemorrhagic stroke FDA ICD10CM source concepts",
+      "id": 2
+    }
+  ],
+  "EndStrategy": {"DateOffset": {
+    "DateField": "StartDate",
+    "Offset": 1
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [{
+      "RestrictVisit": false,
+      "StartWindow": {
+        "UseEventEnd": false,
+        "Start": {"Coeff": -1},
+        "End": {
+          "Days": 0,
+          "Coeff": 1
+        },
+        "UseIndexEnd": false
+      },
+      "IgnoreObservationPeriod": false,
+      "EndWindow": {
+        "UseEventEnd": true,
+        "Start": {
+          "Days": 0,
+          "Coeff": -1
+        },
+        "End": {"Coeff": 1},
+        "UseIndexEnd": false
+      },
+      "Criteria": {"VisitOccurrence": {
+        "CodesetId": 1,
+        "VisitTypeExclude": false
+      }},
+      "Occurrence": {
+        "Type": 2,
+        "IsDistinct": false,
+        "Count": 1
+      }
+    }],
+    "Type": "ALL",
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
+  "QualifiedLimit": {"Type": "All"},
+  "InclusionRules": [{
+    "expression": {
+      "CriteriaList": [{
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 365,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 1,
+            "Coeff": -1
+          },
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": true,
+        "Criteria": {"ConditionOccurrence": {
+          "CorrelatedCriteria": {
+            "CriteriaList": [{
+              "RestrictVisit": false,
+              "StartWindow": {
+                "UseEventEnd": false,
+                "Start": {"Coeff": -1},
+                "End": {
+                  "Days": 0,
+                  "Coeff": 1
+                },
+                "UseIndexEnd": false
+              },
+              "IgnoreObservationPeriod": false,
+              "EndWindow": {
+                "UseEventEnd": true,
+                "Start": {
+                  "Days": 0,
+                  "Coeff": -1
+                },
+                "End": {"Coeff": 1},
+                "UseIndexEnd": false
+              },
+              "Criteria": {"VisitOccurrence": {
+                "CodesetId": 1,
+                "VisitTypeExclude": false
+              }},
+              "Occurrence": {
+                "Type": 2,
+                "IsDistinct": false,
+                "Count": 1
+              }
+            }],
+            "Type": "ALL",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
+          "ConditionTypeExclude": false,
+          "ConditionSourceConcept": 2
+        }},
+        "Occurrence": {
+          "Type": 0,
+          "IsDistinct": false,
+          "Count": 0
+        }
+      }],
+      "Type": "ALL",
+      "DemographicCriteriaList": [],
+      "Groups": []
+    },
+    "name": "has no events in prior 'clean window'"
+  }],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "ConditionSourceConcept": 2
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

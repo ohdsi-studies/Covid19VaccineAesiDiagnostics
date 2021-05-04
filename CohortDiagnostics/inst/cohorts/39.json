@@ -12,11 +12,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 374925,
+            "CONCEPT_ID": 3.739754E7,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "129131007",
+            "CONCEPT_CODE": "718196002",
             "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Acute infective polyneuritis",
+            "CONCEPT_NAME": "Beta thalassemia X-linked thrombocytopenia syndrome",
             "DOMAIN_ID": "Condition",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -29,28 +29,11 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4164770,
+            "CONCEPT_ID": 432870,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "40956001",
+            "CONCEPT_CODE": "302215000",
             "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Guillain-Barré syndrome",
-            "DOMAIN_ID": "Condition",
-            "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Clinical Finding",
-            "INVALID_REASON": "V"
-          },
-          "includeMapped": false,
-          "includeDescendants": true
-        },
-        {
-          "isExcluded": false,
-          "concept": {
-            "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4070552,
-            "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "1767005",
-            "VOCABULARY_ID": "SNOMED",
-            "CONCEPT_NAME": "Fisher's syndrome",
+            "CONCEPT_NAME": "Thrombocytopenic disorder",
             "DOMAIN_ID": "Condition",
             "STANDARD_CONCEPT_CAPTION": "Standard",
             "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -60,8 +43,8 @@
           "includeDescendants": true
         }
       ]},
-      "name": "Guillian-Barre syndrome",
-      "id": 0
+      "name": "Thrombocytopenia (broad)",
+      "id": 1
     },
     {
       "expression": {"items": [
@@ -69,14 +52,14 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 262,
+            "CONCEPT_ID": 3007461,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "ERIP",
-            "VOCABULARY_ID": "Visit",
-            "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
-            "DOMAIN_ID": "Visit",
+            "CONCEPT_CODE": "26515-7",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Platelets [#/volume] in Blood",
+            "DOMAIN_ID": "Measurement",
             "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Visit",
+            "CONCEPT_CLASS_ID": "Lab Test",
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
@@ -86,22 +69,107 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 9201,
+            "CONCEPT_ID": 3031586,
             "STANDARD_CONCEPT": "S",
-            "CONCEPT_CODE": "IP",
-            "VOCABULARY_ID": "Visit",
-            "CONCEPT_NAME": "Inpatient Visit",
-            "DOMAIN_ID": "Visit",
+            "CONCEPT_CODE": "49497-1",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Platelets [#/volume] in Blood by Estimate",
+            "DOMAIN_ID": "Measurement",
             "STANDARD_CONCEPT_CAPTION": "Standard",
-            "CONCEPT_CLASS_ID": "Visit",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3024929,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "777-3",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Platelets [#/volume] in Blood by Automated count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3039827,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "40574-6",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Platelets [#/volume] in Body fluid by Automated count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3024386,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "776-5",
+            "VOCABULARY_ID": "LOINC",
+            "CONCEPT_NAME": "Platelet mean volume [Entitic volume] in Blood by Rees-Ecker",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Lab Test",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4267147,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "61928009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Platelet count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 3.739386E7,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1022651000000100",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Platelet count",
+            "DOMAIN_ID": "Measurement",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Observable Entity",
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
           "includeDescendants": true
         }
       ]},
-      "name": "Inpatient or Inpatient/ER visit",
-      "id": 1
+      "name": "Platelet measurement",
+      "id": 2
     }
   ],
   "EndStrategy": {"DateOffset": {
@@ -110,117 +178,305 @@
   }},
   "cdmVersionRange": ">=5.0.0",
   "CensoringCriteria": [],
-  "AdditionalCriteria": {
-    "CriteriaList": [{
-      "RestrictVisit": false,
-      "StartWindow": {
-        "UseEventEnd": false,
-        "Start": {"Coeff": -1},
-        "End": {
-          "Days": 0,
-          "Coeff": 1
-        },
-        "UseIndexEnd": false
-      },
-      "IgnoreObservationPeriod": false,
-      "EndWindow": {
-        "UseEventEnd": true,
-        "Start": {
-          "Days": 0,
-          "Coeff": -1
-        },
-        "End": {"Coeff": 1},
-        "UseIndexEnd": false
-      },
-      "Criteria": {"VisitOccurrence": {
-        "CodesetId": 1,
-        "VisitTypeExclude": false
-      }},
-      "Occurrence": {
-        "Type": 2,
-        "IsDistinct": false,
-        "Count": 1
-      }
-    }],
-    "Type": "ALL",
-    "DemographicCriteriaList": [],
-    "Groups": []
-  },
   "QualifiedLimit": {"Type": "All"},
   "InclusionRules": [{
     "expression": {
-      "CriteriaList": [{
-        "RestrictVisit": false,
-        "StartWindow": {
-          "UseEventEnd": false,
-          "Start": {
-            "Days": 365,
-            "Coeff": -1
+      "CriteriaList": [
+        {
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": 90,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
           },
-          "End": {
-            "Days": 1,
-            "Coeff": -1
-          },
-          "UseIndexEnd": false
-        },
-        "IgnoreObservationPeriod": true,
-        "Criteria": {"ConditionOccurrence": {
-          "CorrelatedCriteria": {
-            "CriteriaList": [{
-              "RestrictVisit": false,
-              "StartWindow": {
-                "UseEventEnd": false,
-                "Start": {"Coeff": -1},
-                "End": {
-                  "Days": 0,
-                  "Coeff": 1
-                },
-                "UseIndexEnd": false
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"Measurement": {
+            "MeasurementTypeExclude": false,
+            "CodesetId": 2,
+            "ValueAsNumber": {
+              "Op": "bt",
+              "Extent": 150,
+              "Value": 10
+            },
+            "Unit": [
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 8686,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "mm3",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "cubic millimeter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
               },
-              "IgnoreObservationPeriod": false,
-              "EndWindow": {
-                "UseEventEnd": true,
-                "Start": {
-                  "Days": 0,
-                  "Coeff": -1
-                },
-                "End": {"Coeff": 1},
-                "UseIndexEnd": false
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 8785,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "/mm3",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "per cubic millimeter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
               },
-              "Criteria": {"VisitOccurrence": {
-                "CodesetId": 1,
-                "VisitTypeExclude": false
-              }},
-              "Occurrence": {
-                "Type": 2,
-                "IsDistinct": false,
-                "Count": 1
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 8848,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "10*3/uL",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "thousand per microliter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
+              },
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 8961,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "10*3/mm3",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "thousand per cubic millimeter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
+              },
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 9444,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "10*9/L",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "billion per liter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
+              },
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 9254,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "/L",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "per liter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
+              },
+              {
+                "INVALID_REASON_CAPTION": "Unknown",
+                "CONCEPT_ID": 8816,
+                "STANDARD_CONCEPT": null,
+                "CONCEPT_CODE": "10*6/mL",
+                "VOCABULARY_ID": "UCUM",
+                "CONCEPT_NAME": "million per milliliter",
+                "DOMAIN_ID": "Unit",
+                "STANDARD_CONCEPT_CAPTION": "Unknown",
+                "CONCEPT_CLASS_ID": null,
+                "INVALID_REASON": null
               }
-            }],
-            "Type": "ALL",
-            "DemographicCriteriaList": [],
-            "Groups": []
+            ]
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        },
+        {
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": 90,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
           },
-          "ConditionTypeExclude": false,
-          "CodesetId": 0
-        }},
-        "Occurrence": {
-          "Type": 0,
-          "IsDistinct": false,
-          "Count": 0
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"Measurement": {
+            "MeasurementTypeExclude": false,
+            "CodesetId": 2,
+            "ValueAsNumber": {
+              "Op": "bt",
+              "Extent": 150,
+              "Value": 10
+            },
+            "RangeLow": {
+              "Op": "bt",
+              "Extent": 170,
+              "Value": 130
+            }
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        },
+        {
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": 90,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 1,
+              "Coeff": -1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 1
+          }},
+          "Occurrence": {
+            "Type": 0,
+            "IsDistinct": false,
+            "Count": 0
+          }
         }
-      }],
+      ],
       "Type": "ALL",
       "DemographicCriteriaList": [],
       "Groups": []
     },
-    "name": "has no events in prior 'clean window'"
+    "name": "has no events in prior 'clean window' - 90 days"
   }],
   "PrimaryCriteria": {
-    "CriteriaList": [{"ConditionOccurrence": {
-      "ConditionTypeExclude": false,
-      "CodesetId": 0
-    }}],
+    "CriteriaList": [
+      {"Measurement": {
+        "MeasurementTypeExclude": false,
+        "CodesetId": 2,
+        "ValueAsNumber": {
+          "Op": "bt",
+          "Extent": 100,
+          "Value": 10
+        },
+        "Unit": [
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8848,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "10*3/uL",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "thousand per microliter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8961,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "10*3/mm3",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "thousand per cubic millimeter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8785,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "/mm3",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "per cubic millimeter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8686,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "mm3",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "cubic millimeter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 9444,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "10*9/L",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "billion per liter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 9254,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "/L",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "per liter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          },
+          {
+            "INVALID_REASON_CAPTION": "Unknown",
+            "CONCEPT_ID": 8816,
+            "STANDARD_CONCEPT": null,
+            "CONCEPT_CODE": "10*6/mL",
+            "VOCABULARY_ID": "UCUM",
+            "CONCEPT_NAME": "million per milliliter",
+            "DOMAIN_ID": "Unit",
+            "STANDARD_CONCEPT_CAPTION": "Unknown",
+            "CONCEPT_CLASS_ID": null,
+            "INVALID_REASON": null
+          }
+        ]
+      }},
+      {"Measurement": {
+        "MeasurementTypeExclude": false,
+        "CodesetId": 2,
+        "ValueAsNumber": {
+          "Op": "bt",
+          "Extent": 100,
+          "Value": 10
+        },
+        "RangeLow": {
+          "Op": "bt",
+          "Extent": 170,
+          "Value": 130
+        }
+      }}
+    ],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {
       "PostDays": 0,

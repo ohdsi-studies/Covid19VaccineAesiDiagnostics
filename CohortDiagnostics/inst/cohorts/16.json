@@ -5,392 +5,181 @@
     "EraPad": 0
   },
   "CensorWindow": {},
-  "ConceptSets": [{
-    "expression": {"items": [
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 254662,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "64662007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Pulmonary infarction",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 262,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "ERIP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
         },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671311E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "328511000119109",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Saddle embolus of pulmonary artery",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 9201,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "IP",
+            "VOCABULARY_ID": "Visit",
+            "CONCEPT_NAME": "Inpatient Visit",
+            "DOMAIN_ID": "Visit",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Visit",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Inpatient or Inpatient/ER visit",
+      "id": 1
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 372924,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "20059004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cerebral artery occlusion",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 440417,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "59282003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 375557,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "75543006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cerebral embolism",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 435616,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "17263003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Amniotic fluid embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 443454,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "432504007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cerebral infarction",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
         },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 435887,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "49956009",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Antepartum deep vein thrombosis",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 441874,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "71444005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Cerebral thrombosis",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
         },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 196715,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "82385007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Budd-Chiari syndrome",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4062269,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "200259003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Cerebral venous thrombosis in pregnancy",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 442055,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "200286003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Obstetric air pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 433832,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "200299000",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Obstetric blood-clot pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 435026,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "200284000",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Obstetric pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 440477,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "267284008",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Obstetric pyemic and septic pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 318137,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "192753009",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Phlebitis and thrombophlebitis of intracranial sinuses",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 199837,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "17920008",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Portal vein thrombosis",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 438820,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "56272000",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Postpartum deep phlebothrombosis",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4235812,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "439731006",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Septic thrombophlebitis",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 195294,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "75955007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombosed hemorrhoids",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4187790,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "46085004",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombosis of retinal vein",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 444247,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "111293003",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Venous thrombosis",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.478273E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "133971000119108",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Chronic pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.047961E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "441557008",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Septic pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": true
-      },
-      {
-        "isExcluded": true,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4240832,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "58123006",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Failed attempted termination of pregnancy with pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4236271,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "438773007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Recurrent pulmonary embolism",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      }
-    ]},
-    "name": "Pulmonary Embolism_TWT",
-    "id": 0
-  }],
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4.353062E7,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1131000119105",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Sequela of cerebrovascular accident",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Ischemic stroke ",
+      "id": 2
+    }
+  ],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
     "Offset": 1
   }},
   "cdmVersionRange": ">=5.0.0",
   "CensoringCriteria": [],
+  "AdditionalCriteria": {
+    "CriteriaList": [{
+      "RestrictVisit": false,
+      "StartWindow": {
+        "UseEventEnd": false,
+        "Start": {"Coeff": -1},
+        "End": {
+          "Days": 0,
+          "Coeff": 1
+        },
+        "UseIndexEnd": false
+      },
+      "IgnoreObservationPeriod": false,
+      "EndWindow": {
+        "UseEventEnd": true,
+        "Start": {
+          "Days": 0,
+          "Coeff": -1
+        },
+        "End": {"Coeff": 1},
+        "UseIndexEnd": false
+      },
+      "Criteria": {"VisitOccurrence": {
+        "CodesetId": 1,
+        "VisitTypeExclude": false
+      }},
+      "Occurrence": {
+        "Type": 2,
+        "IsDistinct": false,
+        "Count": 1
+      }
+    }],
+    "Type": "ALL",
+    "DemographicCriteriaList": [],
+    "Groups": []
+  },
   "QualifiedLimit": {"Type": "All"},
   "InclusionRules": [{
     "expression": {
@@ -410,8 +199,44 @@
         },
         "IgnoreObservationPeriod": true,
         "Criteria": {"ConditionOccurrence": {
+          "CorrelatedCriteria": {
+            "CriteriaList": [{
+              "RestrictVisit": false,
+              "StartWindow": {
+                "UseEventEnd": false,
+                "Start": {"Coeff": -1},
+                "End": {
+                  "Days": 0,
+                  "Coeff": 1
+                },
+                "UseIndexEnd": false
+              },
+              "IgnoreObservationPeriod": false,
+              "EndWindow": {
+                "UseEventEnd": true,
+                "Start": {
+                  "Days": 0,
+                  "Coeff": -1
+                },
+                "End": {"Coeff": 1},
+                "UseIndexEnd": false
+              },
+              "Criteria": {"VisitOccurrence": {
+                "CodesetId": 1,
+                "VisitTypeExclude": false
+              }},
+              "Occurrence": {
+                "Type": 2,
+                "IsDistinct": false,
+                "Count": 1
+              }
+            }],
+            "Type": "ALL",
+            "DemographicCriteriaList": [],
+            "Groups": []
+          },
           "ConditionTypeExclude": false,
-          "CodesetId": 0
+          "CodesetId": 2
         }},
         "Occurrence": {
           "Type": 0,
@@ -423,12 +248,12 @@
       "DemographicCriteriaList": [],
       "Groups": []
     },
-    "name": "has no events in prior 'clean window' - 365 days"
+    "name": "has no events in prior 'clean window'"
   }],
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 0
+      "CodesetId": 2
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {

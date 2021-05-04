@@ -11,158 +11,56 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4124856,
+          "CONCEPT_ID": 4091559,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "234041004",
+          "CONCEPT_CODE": "280816001",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Inferior mesenteric vein thrombosis",
+          "CONCEPT_NAME": "Facial palsy",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       },
       {
-        "isExcluded": false,
+        "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4318407,
+          "CONCEPT_ID": 4048018,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "95447001",
+          "CONCEPT_CODE": "230542008",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombophlebitis of mesenteric vein",
+          "CONCEPT_NAME": "Congenital facial nerve palsy",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       },
       {
-        "isExcluded": false,
+        "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4055089,
+          "CONCEPT_ID": 3.67164E7,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "197001004",
+          "CONCEPT_CODE": "722389002",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Superior mesenteric vein thrombosis",
+          "CONCEPT_NAME": "Congenital hereditary facial paralysis with variable hearing loss syndrome",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
           "INVALID_REASON": "V"
         },
         "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.575741E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "133421000119101",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Acute thrombosis of mesenteric vein",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.575741E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "133411000119108",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Chronic thrombosis of mesenteric vein",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4317289,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "95446005",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Thrombosis of mesenteric vein",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4144032,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "307420006",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Mesenteric thrombus and/or embolus",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4173167,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "276500007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Mesenteric embolus",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
-      },
-      {
-        "isExcluded": false,
-        "concept": {
-          "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671749E7,
-          "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "721663007",
-          "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Acute occlusion of mesenteric vein",
-          "DOMAIN_ID": "Condition",
-          "STANDARD_CONCEPT_CAPTION": "Standard",
-          "CONCEPT_CLASS_ID": "Clinical Finding",
-          "INVALID_REASON": "V"
-        },
-        "includeMapped": false,
-        "includeDescendants": false
+        "includeDescendants": true
       }
     ]},
-    "name": "Mesenteric vein thrombosis",
-    "id": 6
+    "name": "Bell's palsy",
+    "id": 0
   }],
   "EndStrategy": {"DateOffset": {
     "DateField": "StartDate",
@@ -178,7 +76,7 @@
         "StartWindow": {
           "UseEventEnd": false,
           "Start": {
-            "Days": 365,
+            "Days": 183,
             "Coeff": -1
           },
           "End": {
@@ -190,7 +88,7 @@
         "IgnoreObservationPeriod": true,
         "Criteria": {"ConditionOccurrence": {
           "ConditionTypeExclude": false,
-          "CodesetId": 6
+          "CodesetId": 0
         }},
         "Occurrence": {
           "Type": 0,
@@ -202,12 +100,12 @@
       "DemographicCriteriaList": [],
       "Groups": []
     },
-    "name": "has no events in prior 'clean window' - 365 days"
+    "name": "has no events in prior 'clean window' 183 days"
   }],
   "PrimaryCriteria": {
     "CriteriaList": [{"ConditionOccurrence": {
       "ConditionTypeExclude": false,
-      "CodesetId": 6
+      "CodesetId": 0
     }}],
     "PrimaryCriteriaLimit": {"Type": "All"},
     "ObservationWindow": {
