@@ -1,0 +1,43 @@
+﻿outcomeId,outcomeCohortDefinitionId,outcomeName,cleanWindow,primaryTimeAtRiskStartOffset,primaryTimeAtRiskStartIndex,primaryTimeAtRiskEndOffset,primaryTimeAtRiskEndIndex,excludedCohortDefinitionId,fileName
+448,448,[TwT] new thrombosis (DVT-Narrow),365,1,0,28,0,0,448.sql
+457,457,[TwT] new thrombosis (Mesenteric vein thrombosis),365,1,0,28,0,0,457.sql
+458,458,[TwT] new thrombosis (Splenic infarction),365,1,0,28,0,0,458.sql
+459,459,[TwT] new thrombosis (Intestinal infarction),365,1,0,28,0,0,459.sql
+460,460,[TwT] new thrombosis (MI),365,1,0,28,0,0,460.sql
+461,461,[TwT] new thrombosis (Hemorrhagic stroke),365,1,0,28,0,0,461.sql
+462,462,[TwT] new thrombosis (Ischemic stroke),365,1,0,28,0,0,462.sql
+463,463,"[TwT] new thrombosis (Intraabdominal-vein of trunk, pelvic vein )",365,1,0,28,0,0,463.sql
+464,464,"[TwT] new thrombosis (Intraabdominal-Visceral venous, portal vein)",365,1,0,28,0,0,464.sql
+465,465,[TwT] new thrombosis (Splenic thrombosis),365,1,0,28,0,0,465.sql
+466,466,[TwT] new thrombosis (Hepatic thrombosis),365,1,0,28,0,0,466.sql
+467,467,[TwT] new thrombosis (PE),365,1,0,28,0,0,467.sql
+468,468,[TwT] new thrombosis (DVT-Broad),365,1,0,28,0,0,468.sql
+469,469,[TwT] new thrombosis (CVST-Narrow),365,1,0,28,0,0,469.sql
+475,475,[TwT] Thrombocytopenia events (platelet lt 150),365,1,0,28,0,0,475.sql
+430,430,[TwT] Thrombocytopenia events (diagnosis broad or platelet lt 150),365,1,0,28,0,0,430.sql
+473,473,[TwT] Thrombocytopenia events (diagnosis broad),365,1,0,28,0,0,473.sql
+474,474,[TwT] Thrombocytopenia events (diagnosis narrow),365,1,0,28,0,0,474.sql
+472,472,[TwT] Thrombocytopenia events (diagnosis narrow or platelet lt 150),365,1,0,28,0,0,472.sql
+476,476,[TwT] Thrombocytopenia events (platelet lt 120),365,1,0,28,0,0,476.sql
+477,477,[TwT] Thrombocytopenia events (platelet lt 100),365,1,0,28,0,0,477.sql
+478,478,[TwT] Thrombosis (broad diagnosis) events,365,1,0,28,0,0,478.sql
+479,479,[TwT] Thrombosis (narrow diagnosis) events,365,1,0,28,0,0,479.sql
+470,470,[TwT] new thrombosis (CVST-Broad),365,1,0,28,0,0,470.sql
+456,456,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 120) events,365,1,0,28,0,0,456.sql
+455,455,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,455.sql
+454,454,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events,365,1,0,28,0,0,454.sql
+452,452,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 120) events,365,1,0,28,0,0,452.sql
+451,451,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,451.sql
+480,480,[TwT] Thrombosis (CVST broad diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,480.sql
+481,481,[TwT] Thrombosis (CVST narrow diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,481.sql
+482,482,[TwT] Thrombosis (DVT narrow diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,482.sql
+449,449,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events,365,1,0,28,0,0,449.sql
+453,453,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,453.sql
+450,450,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,450.sql
+483,483,[TwT] Thrombosis (pulmonary embolism diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,483.sql
+484,484,[TwT] Thrombosis (hepatic thrombosis diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,484.sql
+485,485,[TwT] Thrombosis (splenic vein diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,485.sql
+486,486,[TwT] Thrombosis (portal vein diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,486.sql
+487,487,[TwT] Thrombosis (cerebral infarction diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,487.sql
+488,488,[TwT] Thrombosis (hemorrhagic stroke diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,488.sql
+489,489,[TwT] Thrombosis (myocardial infarction diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,489.sql
