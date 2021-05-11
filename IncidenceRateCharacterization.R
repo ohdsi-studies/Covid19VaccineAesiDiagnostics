@@ -1,7 +1,7 @@
-bearerToken <- "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb2hvcnRkaWFnbm9zdGljc0BnbWFpbC5jb20iLCJleHAiOjE2MjAzMDY3Njl9.4fuOld7OCLZ2GooMcl7KE4zcUa0vxClr73DoRBJPIzVxS1w1dMgkppMEfyMI_N6dCF_SalXn9f6RiGaqtM0k3g"
+#BearerToken <- ""
 baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
 
-ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = bearerToken)
+ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
 
 
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
@@ -14,7 +14,7 @@ cohortDefinitionsArray <- list()
 for (i in (1:nrow(studyCohorts))) {
   print(i)
   name <- studyCohorts$name[[i]]
-  outcomeRef <- readr::read_csv(file = "inst\\settings\\OutcomeRef.csv", col_types = readr::cols())
+  outcomeRef <- readr::read_csv(file = "Covid19VaccineAesiIncidenceCharacterization\\inst\\settings\\OutcomeRef.csv", col_types = readr::cols())
   
   outcomeRef2[[i]] <- outcomeRef[1,] %>% 
     dplyr::mutate(outcomeId = studyCohorts$id[[i]],
@@ -30,9 +30,9 @@ for (i in (1:nrow(studyCohorts))) {
                                                     baseUrl = baseUrlWebApi,generateStats = FALSE)
   
   SqlRender::writeSql(sql = cohortDefinitionJson, 
-                      targetFile = file.path("inst\\cohort\\outcome", paste0(studyCohorts$id[[i]], ".sql")))
+                      targetFile = file.path("Covid19VaccineAesiIncidenceCharacterization\\inst\\cohort\\outcome", paste0(studyCohorts$id[[i]], ".sql")))
   SqlRender::writeSql(sql = cohortDefinitionSql, 
-                      targetFile = file.path("inst\\sql\\sql_server\\outcome", paste0(studyCohorts$id[[i]], ".sql")))
+                      targetFile = file.path("Covid19VaccineAesiIncidenceCharacterization\\inst\\sql\\sql_server\\outcome", paste0(studyCohorts$id[[i]], ".sql")))
 }
 
 outcomeRef2 <- dplyr::bind_rows(outcomeRef2) %>% 
