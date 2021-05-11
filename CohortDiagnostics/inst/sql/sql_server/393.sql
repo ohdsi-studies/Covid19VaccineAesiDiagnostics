@@ -28,11 +28,11 @@ UNION  select c.concept_id
 ) I
 LEFT JOIN
 (
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (43530700,4249574)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (43530701,4249574)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (43530700,4249574)
+  and ca.ancestor_concept_id in (43530701,4249574)
   and c.invalid_reason is null
 
 ) E ON I.concept_id = E.concept_id
@@ -40,7 +40,7 @@ WHERE E.concept_id is null
 ) C UNION ALL 
 SELECT 3 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (45533130,45581480,45566860,45576570,45586270)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (45533127,45581479,45566860,45576568,45586270)
 
 ) I
 ) C

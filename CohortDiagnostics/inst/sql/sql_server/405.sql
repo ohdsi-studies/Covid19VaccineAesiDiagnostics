@@ -18,16 +18,16 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 4 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (439847,432923,4148906,4144154,4111709,42535430,43530730,43530730)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (439847,432923,4148906,4144154,4111709,42535426,43530728,43530727)
 
 ) I
 LEFT JOIN
 (
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (376713,4174299,36716540,4345688)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (376713,4174299,36716544,4345688)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (4174299,36716540,4345688)
+  and ca.ancestor_concept_id in (4174299,36716544,4345688)
   and c.invalid_reason is null
 
 ) E ON I.concept_id = E.concept_id

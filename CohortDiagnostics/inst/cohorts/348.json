@@ -206,7 +206,7 @@
           "ConditionType": [
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.800018E7,
+              "CONCEPT_ID": 38000183,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822059",
               "VOCABULARY_ID": "Condition Type",
@@ -218,7 +218,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.80002E7,
+              "CONCEPT_ID": 38000199,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822075",
               "VOCABULARY_ID": "Condition Type",
@@ -230,7 +230,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 4.478663E7,
+              "CONCEPT_ID": 44786627,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822127",
               "VOCABULARY_ID": "Condition Type",
@@ -242,7 +242,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.800018E7,
+              "CONCEPT_ID": 38000184,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822060",
               "VOCABULARY_ID": "Condition Type",
@@ -254,7 +254,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.80002E7,
+              "CONCEPT_ID": 38000200,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822076",
               "VOCABULARY_ID": "Condition Type",
@@ -266,7 +266,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.800022E7,
+              "CONCEPT_ID": 38000215,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822091",
               "VOCABULARY_ID": "Condition Type",
@@ -278,7 +278,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 3.800023E7,
+              "CONCEPT_ID": 38000230,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822106",
               "VOCABULARY_ID": "Condition Type",
@@ -290,7 +290,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 4.575684E7,
+              "CONCEPT_ID": 45756835,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822136",
               "VOCABULARY_ID": "Condition Type",
@@ -302,7 +302,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 4.575684E7,
+              "CONCEPT_ID": 45756843,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822144",
               "VOCABULARY_ID": "Condition Type",
@@ -314,7 +314,7 @@
             },
             {
               "INVALID_REASON_CAPTION": "Unknown",
-              "CONCEPT_ID": 4.478663E7,
+              "CONCEPT_ID": 44786628,
               "STANDARD_CONCEPT": null,
               "CONCEPT_CODE": "OMOP4822128",
               "VOCABULARY_ID": "Condition Type",
@@ -345,7 +345,7 @@
       "ConditionType": [
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.800018E7,
+          "CONCEPT_ID": 38000183,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822059",
           "VOCABULARY_ID": "Condition Type",
@@ -357,7 +357,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.80002E7,
+          "CONCEPT_ID": 38000199,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822075",
           "VOCABULARY_ID": "Condition Type",
@@ -369,7 +369,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 4.478663E7,
+          "CONCEPT_ID": 44786627,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822127",
           "VOCABULARY_ID": "Condition Type",
@@ -381,7 +381,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.800018E7,
+          "CONCEPT_ID": 38000184,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822060",
           "VOCABULARY_ID": "Condition Type",
@@ -393,7 +393,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.80002E7,
+          "CONCEPT_ID": 38000200,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822076",
           "VOCABULARY_ID": "Condition Type",
@@ -405,7 +405,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.800022E7,
+          "CONCEPT_ID": 38000215,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822091",
           "VOCABULARY_ID": "Condition Type",
@@ -417,7 +417,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 3.800023E7,
+          "CONCEPT_ID": 38000230,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822106",
           "VOCABULARY_ID": "Condition Type",
@@ -429,7 +429,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 4.575684E7,
+          "CONCEPT_ID": 45756835,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822136",
           "VOCABULARY_ID": "Condition Type",
@@ -441,7 +441,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 4.575684E7,
+          "CONCEPT_ID": 45756843,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822144",
           "VOCABULARY_ID": "Condition Type",
@@ -453,7 +453,7 @@
         },
         {
           "INVALID_REASON_CAPTION": "Unknown",
-          "CONCEPT_ID": 4.478663E7,
+          "CONCEPT_ID": 44786628,
           "STANDARD_CONCEPT": null,
           "CONCEPT_CODE": "OMOP4822128",
           "VOCABULARY_ID": "Condition Type",

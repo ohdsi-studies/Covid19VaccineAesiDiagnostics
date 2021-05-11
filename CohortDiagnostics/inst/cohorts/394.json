@@ -11,7 +11,7 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.520742E7,
+          "CONCEPT_ID": 35207415,
           "STANDARD_CONCEPT": "N",
           "CONCEPT_CODE": "G51.0",
           "VOCABULARY_ID": "ICD10CM",
@@ -28,7 +28,7 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.520742E7,
+          "CONCEPT_ID": 35207421,
           "STANDARD_CONCEPT": "N",
           "CONCEPT_CODE": "G51.9",
           "VOCABULARY_ID": "ICD10CM",
@@ -45,7 +45,7 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.520742E7,
+          "CONCEPT_ID": 35207420,
           "STANDARD_CONCEPT": "N",
           "CONCEPT_CODE": "G51.8",
           "VOCABULARY_ID": "ICD10CM",

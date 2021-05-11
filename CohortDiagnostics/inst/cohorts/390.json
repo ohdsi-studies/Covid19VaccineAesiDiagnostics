@@ -148,7 +148,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.553852E7,
+            "CONCEPT_ID": 45538522,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "K35.80",
             "VOCABULARY_ID": "ICD10CM",
@@ -165,7 +165,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.520825E7,
+            "CONCEPT_ID": 35208251,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "K37",
             "VOCABULARY_ID": "ICD10CM",

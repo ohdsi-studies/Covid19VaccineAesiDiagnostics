@@ -51,7 +51,7 @@ FROM
   JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.condition_type_concept_id  in (38000180,38000200,44786630,38000180,38000200,38000220,38000230,45756840,45756840,44786630)
+WHERE C.condition_type_concept_id  in (38000183,38000199,44786627,38000184,38000200,38000215,38000230,45756835,45756843,44786628)
 -- End Condition Occurrence Criteria
 
   ) E
@@ -148,7 +148,7 @@ FROM
   JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.condition_type_concept_id  in (38000180,38000200,44786630,38000180,38000200,38000220,38000230,45756840,45756840,44786630)
+WHERE C.condition_type_concept_id  in (38000183,38000199,44786627,38000184,38000200,38000215,38000230,45756835,45756843,44786628)
 -- End Condition Occurrence Criteria
 
 ) PE
@@ -170,7 +170,7 @@ FROM
   JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.condition_type_concept_id  in (38000180,38000200,44786630,38000180,38000200,38000220,38000230,45756840,45756840,44786630)
+WHERE C.condition_type_concept_id  in (38000183,38000199,44786627,38000184,38000200,38000215,38000230,45756835,45756843,44786628)
 -- End Condition Occurrence Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 
@@ -192,7 +192,7 @@ FROM
   JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 0))
 ) C
 
-WHERE C.condition_type_concept_id  in (38000180,38000200,44786630,38000180,38000200,38000220,38000230,45756840,45756840,44786630)
+WHERE C.condition_type_concept_id  in (38000183,38000199,44786627,38000184,38000200,38000215,38000230,45756835,45756843,44786628)
 -- End Condition Occurrence Criteria
 ) Q
 JOIN @cdm_database_schema.OBSERVATION_PERIOD OP on Q.person_id = OP.person_id 

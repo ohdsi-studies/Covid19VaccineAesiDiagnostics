@@ -120,7 +120,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.35307E7,
+            "CONCEPT_ID": 43530701,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "182961000119101",
             "VOCABULARY_ID": "SNOMED",
@@ -194,7 +194,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.553313E7,
+            "CONCEPT_ID": 45533127,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "G04.00",
             "VOCABULARY_ID": "ICD10CM",
@@ -211,7 +211,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.558148E7,
+            "CONCEPT_ID": 45581479,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "G05.3",
             "VOCABULARY_ID": "ICD10CM",
@@ -228,7 +228,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.556686E7,
+            "CONCEPT_ID": 45566860,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "G04.90",
             "VOCABULARY_ID": "ICD10CM",
@@ -245,7 +245,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.557657E7,
+            "CONCEPT_ID": 45576568,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "G04.81",
             "VOCABULARY_ID": "ICD10CM",
@@ -262,7 +262,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.558627E7,
+            "CONCEPT_ID": 45586270,
             "STANDARD_CONCEPT": "N",
             "CONCEPT_CODE": "G04.02",
             "VOCABULARY_ID": "ICD10CM",

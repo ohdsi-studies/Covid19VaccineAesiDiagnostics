@@ -130,7 +130,7 @@
         "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.576544E7,
+          "CONCEPT_ID": 45765438,
           "STANDARD_CONCEPT": "S",
           "CONCEPT_CODE": "702374000",
           "VOCABULARY_ID": "SNOMED",
@@ -147,7 +147,7 @@
         "isExcluded": true,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 3.671759E7,
+          "CONCEPT_ID": 36717594,
           "STANDARD_CONCEPT": "S",
           "CONCEPT_CODE": "722930000",
           "VOCABULARY_ID": "SNOMED",

@@ -114,7 +114,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.739386E7,
+            "CONCEPT_ID": 37393863,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "1022651000000100",
             "VOCABULARY_ID": "SNOMED",
@@ -154,7 +154,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.739754E7,
+            "CONCEPT_ID": 37397537,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "718196002",
             "VOCABULARY_ID": "SNOMED",
@@ -171,7 +171,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.671311E7,
+            "CONCEPT_ID": 36713112,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "328301000119102",
             "VOCABULARY_ID": "SNOMED",
@@ -188,7 +188,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.032172E7,
+            "CONCEPT_ID": 40321716,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "154826009",
             "VOCABULARY_ID": "SNOMED",
@@ -307,7 +307,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.253696E7,
+            "CONCEPT_ID": 42536958,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "736024007",
             "VOCABULARY_ID": "SNOMED",
@@ -358,7 +358,7 @@
           "isExcluded": true,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 4.253769E7,
+            "CONCEPT_ID": 42537688,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "737221003",
             "VOCABULARY_ID": "SNOMED",
@@ -449,7 +449,7 @@
           "isExcluded": false,
           "concept": {
             "INVALID_REASON_CAPTION": "Valid",
-            "CONCEPT_ID": 3.739754E7,
+            "CONCEPT_ID": 37397537,
             "STANDARD_CONCEPT": "S",
             "CONCEPT_CODE": "718196002",
             "VOCABULARY_ID": "SNOMED",

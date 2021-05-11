@@ -18,7 +18,7 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 2 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (35207820,35207810,35207810,1569192,35207820,45557550,35207810,45605810,35207820,35207810,35207810,45538390,35207810)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (35207818,35207811,35207809,1569192,35207815,45557548,35207814,45605805,35207816,35207808,35207813,45538392,35207810)
 
 ) I
 ) C

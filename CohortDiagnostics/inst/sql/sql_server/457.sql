@@ -7,7 +7,7 @@ CREATE TABLE #Codesets (
 INSERT INTO #Codesets (codeset_id, concept_id)
 SELECT 6 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4124856,4318407,4055089,45757410,45757410,4317289,4144032,4173167,36717490)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4124856,4318407,4055089,45757410,45757409,4317289,4144032,4173167,36717492)
 
 ) I
 ) C

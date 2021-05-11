@@ -28,11 +28,11 @@ UNION  select c.concept_id
 ) I
 LEFT JOIN
 (
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (40479570,4046360)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (40479572,4046360)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (40479570,4046360)
+  and ca.ancestor_concept_id in (40479572,4046360)
   and c.invalid_reason is null
 
 ) E ON I.concept_id = E.concept_id

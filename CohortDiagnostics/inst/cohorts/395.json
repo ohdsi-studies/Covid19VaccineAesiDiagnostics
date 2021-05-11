@@ -11,7 +11,7 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.556814E7,
+          "CONCEPT_ID": 45568142,
           "STANDARD_CONCEPT": "N",
           "CONCEPT_CODE": "R56.01",
           "VOCABULARY_ID": "ICD10CM",
@@ -28,7 +28,7 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 4.55778E7,
+          "CONCEPT_ID": 45577799,
           "STANDARD_CONCEPT": "N",
           "CONCEPT_CODE": "R56.00",
           "VOCABULARY_ID": "ICD10CM",
