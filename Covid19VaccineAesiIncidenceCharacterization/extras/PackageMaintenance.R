@@ -72,7 +72,15 @@ analysis6 <- list(name = "Impact of phenotype definition and outcome clean windo
                   timeAtRiskIds = list(5),
                   outcomeIds = list(313, 327, 345, 328, 346, 363, 322, 329, 347, 330, 348, 315, 331, 333, 349, 320, 334, 350, 351, 352, 335, 337, 353, 309, 338, 354, 304, 306, 355, 325, 339, 356, 340, 357, 341, 358, 359, 311, 364, 342, 360, 343, 344, 361, 317, 362))
 
-analysisList = list(analysisList = list(analysis1, analysis2, analysis3, analysis4, analysis5, analysis6))
+#7: TwT analysis
+analysis7 <- list(name = "Impact of phenotype definition and outcome clean window",
+                  targetIds = list(104),
+                  subgroupIds = list(21, 22, 31, 32, 41, 42, 51, 52, 61, 62, 71, 72, 81, 82, 91, 92),
+                  timeAtRiskIds = list(5),
+                  outcomeIds = list(448,	457,	458,	459,	460,	461,	462,	463,	464,	465,	466,	467,	468,	469,	475,	430,	473,	474,	472,	476,	477,	478,	479,	470,	456,	455,	454,	452,	451,	480,	481,	482,	449,	453,	450,	483,	484,	485,	486,	487,	488,	489))
+
+# analysisList = list(analysisList = list(analysis1, analysis2, analysis3, analysis4, analysis5, analysis6))
+analysisList = list(analysisList = list(analysis7))
 analysisListJson <- RJSONIO::toJSON(analysisList, pretty = T)
 analysisListFile <- "D:/git/ohdsi-studies/Covid19VaccineAesiIncidenceCharacterization/inst/settings/analysisSettings.json"
 write(analysisListJson, file = analysisListFile)
