@@ -2,6 +2,7 @@
 baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
 # BearerToken <- ""
 ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
+
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
   dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |
                   .data$id %in% c(331:349, 380:411))
@@ -90,6 +91,11 @@ DatabaseConnector::createZipFile(zipFile = file.path(tempFolder, 'skeleton.zip')
 
 #### Code that uses the ExampleCohortDiagnosticsSpecs in Hydra to build package
 hydraSpecificationFromFile <- Hydra::loadSpecifications(fileName = jsonFileName)
+saveRDS(object = hydraSpecificationFromFile, file = 'hydraSpecificationFromFile.rds')
+
+# regenerate from file
+# hydraSpecificationFromFile <- readRDS(file = 'hydraSpecificationFromFile.rds')
+
 unlink(x = outputFolder, recursive = TRUE)
 dir.create(path = outputFolder, showWarnings = FALSE, recursive = TRUE)
 Hydra::hydrate(specifications = hydraSpecificationFromFile,
@@ -97,19 +103,32 @@ Hydra::hydrate(specifications = hydraSpecificationFromFile,
                skeletonFileName = file.path(tempFolder, 'skeleton.zip')
 )
 
-
 unlink(x = tempFolder, recursive = TRUE, force = TRUE)
 
-saveRDS(object = specifications, file = 'specifications.rds')
 
-# regenerate from file
-# specifications <- readRDS(file = 'specifications.rds')
+## because Hydra does not support generate inclusion stats parameter, we have to use circe to create cohort sql
+# https://github.com/OHDSI/Hydra/issues/21
 
-specifications <- list(studyCohorts = studyCohorts,
-              cohortDefinitionsArray = cohortDefinitionsArray,
-              specifications = specifications,
-              hydraSpecificationFromFile = hydraSpecificationFromFile)
-
+listOfCohortJsonsInPackage <- list.files(path = file.path(outputFolder, 'inst', 'cohorts'), 
+                                         pattern = ".json", 
+                                         full.names = FALSE, 
+                                         recursive = FALSE)
+for (i in (1:length(listOfCohortJsonsInPackage))) {
+  jsonFromFile <- SqlRender::readSql(sourceFile = file.path(outputFolder, 'inst', 'cohorts', listOfCohortJsonsInPackage[[i]]))
+  cohortExpression <- CirceR::cohortExpressionFromJson(expressionJson = jsonFromFile)
+  fileName <- stringr::str_replace(string = basename(listOfCohortJsonsInPackage[[i]]), 
+                                   pattern = ".json", 
+                                   replacement = "")
+  genOp <- CirceR::createGenerateOptions(cohortIdFieldName = "cohort_definition_id",
+                                         cohortId = fileName,
+                                         cdmSchema = "@cdm_database_schema",
+                                         targetTable = "@target_cohort_table",
+                                         resultSchema = "@result_database_schema",
+                                         vocabularySchema = "@vocabulary_database_schema",
+                                         generateStats = TRUE)
+  sql <- CirceR::buildCohortQuery(expression = cohortExpression, options = genOp)
+  SqlRender::writeSql(sql = sql, targetFile = file.path(outputFolder, 'inst', 'sql', 'sql_server', paste0(fileName, '.sql')))
+}
 
 ##############################################################
 ##############################################################
