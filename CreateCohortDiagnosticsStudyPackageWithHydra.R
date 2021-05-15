@@ -9,7 +9,7 @@ studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebA
 
 ##########################################
 #remotes::install_github("OHDSI/Hydra")
-outputFolder <- "CohortDiagnostics"  # location where you study package will be created
+# outputFolder <- "CohortDiagnostics"  # location where you study package will be created
 library(magrittr)
 
 ########## Please populate the information below #####################
@@ -122,8 +122,8 @@ for (i in (1:length(listOfCohortJsonsInPackage))) {
   genOp <- CirceR::createGenerateOptions(cohortIdFieldName = "cohort_definition_id",
                                          cohortId = fileName,
                                          cdmSchema = "@cdm_database_schema",
-                                         targetTable = "@target_cohort_table",
-                                         resultSchema = "@results_database_schema",
+                                         # targetTable = "@target_cohort_table",
+                                         # resultSchema = "@target_database_schema",
                                          vocabularySchema = "@vocabulary_database_schema",
                                          generateStats = TRUE)
   sql <- CirceR::buildCohortQuery(expression = cohortExpression, options = genOp)
