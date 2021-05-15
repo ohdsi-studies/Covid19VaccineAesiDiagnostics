@@ -91,7 +91,7 @@ DatabaseConnector::createZipFile(zipFile = file.path(tempFolder, 'skeleton.zip')
 
 #### Code that uses the ExampleCohortDiagnosticsSpecs in Hydra to build package
 hydraSpecificationFromFile <- Hydra::loadSpecifications(fileName = jsonFileName)
-saveRDS(object = hydraSpecificationFromFile, file = 'hydraSpecificationFromFile.rds')
+saveRDS(object = hydraSpecificationFromFile, file = file.path(dirname(outputFolder),'hydraSpecificationFromFile.rds'))
 
 # regenerate from file
 # hydraSpecificationFromFile <- readRDS(file = 'hydraSpecificationFromFile.rds')
@@ -121,11 +121,11 @@ for (i in (1:length(listOfCohortJsonsInPackage))) {
                                    replacement = "")
   genOp <- CirceR::createGenerateOptions(
     # cohortIdFieldName = "cohort_definition_id",
-                                         cohortId = fileName,
+                                         # cohortId = fileName,
                                          # cdmSchema = "@cdm_database_schema",
                                          # targetTable = "@target_cohort_table",
                                          # resultSchema = "@target_database_schema",
-                                         vocabularySchema = "@vocabulary_database_schema",
+                                         # vocabularySchema = "@vocabulary_database_schema",
                                          generateStats = TRUE)
   sql <- CirceR::buildCohortQuery(expression = cohortExpression, options = genOp)
   SqlRender::writeSql(sql = sql, targetFile = file.path(outputFolder, 'inst', 'sql', 'sql_server', paste0(fileName, '.sql')))
