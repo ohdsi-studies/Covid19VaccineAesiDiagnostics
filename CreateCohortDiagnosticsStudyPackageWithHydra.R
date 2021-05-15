@@ -119,9 +119,10 @@ for (i in (1:length(listOfCohortJsonsInPackage))) {
   fileName <- stringr::str_replace(string = basename(listOfCohortJsonsInPackage[[i]]), 
                                    pattern = ".json", 
                                    replacement = "")
-  genOp <- CirceR::createGenerateOptions(cohortIdFieldName = "cohort_definition_id",
+  genOp <- CirceR::createGenerateOptions(
+    # cohortIdFieldName = "cohort_definition_id",
                                          cohortId = fileName,
-                                         cdmSchema = "@cdm_database_schema",
+                                         # cdmSchema = "@cdm_database_schema",
                                          # targetTable = "@target_cohort_table",
                                          # resultSchema = "@target_database_schema",
                                          vocabularySchema = "@vocabulary_database_schema",
