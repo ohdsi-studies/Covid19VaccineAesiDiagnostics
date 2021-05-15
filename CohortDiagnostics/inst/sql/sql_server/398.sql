@@ -250,8 +250,8 @@ WHERE ranked.rank_value = 1
 
 -- BEGIN: Inclusion Impact Analysis - event
 -- calculte matching group counts
-delete from @result_database_schema.cohort_inclusion_result where cohort_definition_id = 398 and mode_id = 0;
-insert into @result_database_schema.cohort_inclusion_result (cohort_definition_id, inclusion_rule_mask, person_count, mode_id)
+delete from @results_database_schema.cohort_inclusion_result where cohort_definition_id = 398 and mode_id = 0;
+insert into @results_database_schema.cohort_inclusion_result (cohort_definition_id, inclusion_rule_mask, person_count, mode_id)
 select 398 as cohort_definition_id, inclusion_rule_mask, count_big(*) as person_count, 0 as mode_id
 from
 (
@@ -264,10 +264,10 @@ group by inclusion_rule_mask
 ;
 
 -- calculate gain counts 
-delete from @result_database_schema.cohort_inclusion_stats where cohort_definition_id = 398 and mode_id = 0;
-insert into @result_database_schema.cohort_inclusion_stats (cohort_definition_id, rule_sequence, person_count, gain_count, person_total, mode_id)
+delete from @results_database_schema.cohort_inclusion_stats where cohort_definition_id = 398 and mode_id = 0;
+insert into @results_database_schema.cohort_inclusion_stats (cohort_definition_id, rule_sequence, person_count, gain_count, person_total, mode_id)
 select ir.cohort_definition_id, ir.rule_sequence, coalesce(T.person_count, 0) as person_count, coalesce(SR.person_count, 0) gain_count, EventTotal.total, 0 as mode_id
-from @result_database_schema.cohort_inclusion ir
+from @results_database_schema.cohort_inclusion ir
 left join
 (
   select i.inclusion_rule_id, count_big(i.event_id) as person_count
@@ -275,21 +275,21 @@ left join
   JOIN #inclusion_events i on Q.person_id = I.person_id and Q.event_id = i.event_id
   group by i.inclusion_rule_id
 ) T on ir.rule_sequence = T.inclusion_rule_id
-CROSS JOIN (select count(*) as total_rules from @result_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
+CROSS JOIN (select count(*) as total_rules from @results_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
 CROSS JOIN (select count_big(event_id) as total from #qualified_events) EventTotal
-LEFT JOIN @result_database_schema.cohort_inclusion_result SR on SR.mode_id = 0 AND SR.cohort_definition_id = 398 AND (POWER(cast(2 as bigint),RuleTotal.total_rules) - POWER(cast(2 as bigint),ir.rule_sequence) - 1) = SR.inclusion_rule_mask -- POWER(2,rule count) - POWER(2,rule sequence) - 1 is the mask for 'all except this rule' 
+LEFT JOIN @results_database_schema.cohort_inclusion_result SR on SR.mode_id = 0 AND SR.cohort_definition_id = 398 AND (POWER(cast(2 as bigint),RuleTotal.total_rules) - POWER(cast(2 as bigint),ir.rule_sequence) - 1) = SR.inclusion_rule_mask -- POWER(2,rule count) - POWER(2,rule sequence) - 1 is the mask for 'all except this rule' 
 WHERE ir.cohort_definition_id = 398
 ;
 
 -- calculate totals
-delete from @result_database_schema.cohort_summary_stats where cohort_definition_id = 398 and mode_id = 0;
-insert into @result_database_schema.cohort_summary_stats (cohort_definition_id, base_count, final_count, mode_id)
+delete from @results_database_schema.cohort_summary_stats where cohort_definition_id = 398 and mode_id = 0;
+insert into @results_database_schema.cohort_summary_stats (cohort_definition_id, base_count, final_count, mode_id)
 select 398 as cohort_definition_id, PC.total as person_count, coalesce(FC.total, 0) as final_count, 0 as mode_id
 FROM
 (select count_big(event_id) as total from #qualified_events) PC,
 (select sum(sr.person_count) as total
-  from @result_database_schema.cohort_inclusion_result sr
-  CROSS JOIN (select count(*) as total_rules from @result_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
+  from @results_database_schema.cohort_inclusion_result sr
+  CROSS JOIN (select count(*) as total_rules from @results_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
   where sr.mode_id = 0 and sr.cohort_definition_id = 398 and sr.inclusion_rule_mask = POWER(cast(2 as bigint),RuleTotal.total_rules)-1
 ) FC
 ;
@@ -298,8 +298,8 @@ FROM
 
 -- BEGIN: Inclusion Impact Analysis - person
 -- calculte matching group counts
-delete from @result_database_schema.cohort_inclusion_result where cohort_definition_id = 398 and mode_id = 1;
-insert into @result_database_schema.cohort_inclusion_result (cohort_definition_id, inclusion_rule_mask, person_count, mode_id)
+delete from @results_database_schema.cohort_inclusion_result where cohort_definition_id = 398 and mode_id = 1;
+insert into @results_database_schema.cohort_inclusion_result (cohort_definition_id, inclusion_rule_mask, person_count, mode_id)
 select 398 as cohort_definition_id, inclusion_rule_mask, count_big(*) as person_count, 1 as mode_id
 from
 (
@@ -312,10 +312,10 @@ group by inclusion_rule_mask
 ;
 
 -- calculate gain counts 
-delete from @result_database_schema.cohort_inclusion_stats where cohort_definition_id = 398 and mode_id = 1;
-insert into @result_database_schema.cohort_inclusion_stats (cohort_definition_id, rule_sequence, person_count, gain_count, person_total, mode_id)
+delete from @results_database_schema.cohort_inclusion_stats where cohort_definition_id = 398 and mode_id = 1;
+insert into @results_database_schema.cohort_inclusion_stats (cohort_definition_id, rule_sequence, person_count, gain_count, person_total, mode_id)
 select ir.cohort_definition_id, ir.rule_sequence, coalesce(T.person_count, 0) as person_count, coalesce(SR.person_count, 0) gain_count, EventTotal.total, 1 as mode_id
-from @result_database_schema.cohort_inclusion ir
+from @results_database_schema.cohort_inclusion ir
 left join
 (
   select i.inclusion_rule_id, count_big(i.event_id) as person_count
@@ -323,21 +323,21 @@ left join
   JOIN #inclusion_events i on Q.person_id = I.person_id and Q.event_id = i.event_id
   group by i.inclusion_rule_id
 ) T on ir.rule_sequence = T.inclusion_rule_id
-CROSS JOIN (select count(*) as total_rules from @result_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
+CROSS JOIN (select count(*) as total_rules from @results_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
 CROSS JOIN (select count_big(event_id) as total from #best_events) EventTotal
-LEFT JOIN @result_database_schema.cohort_inclusion_result SR on SR.mode_id = 1 AND SR.cohort_definition_id = 398 AND (POWER(cast(2 as bigint),RuleTotal.total_rules) - POWER(cast(2 as bigint),ir.rule_sequence) - 1) = SR.inclusion_rule_mask -- POWER(2,rule count) - POWER(2,rule sequence) - 1 is the mask for 'all except this rule' 
+LEFT JOIN @results_database_schema.cohort_inclusion_result SR on SR.mode_id = 1 AND SR.cohort_definition_id = 398 AND (POWER(cast(2 as bigint),RuleTotal.total_rules) - POWER(cast(2 as bigint),ir.rule_sequence) - 1) = SR.inclusion_rule_mask -- POWER(2,rule count) - POWER(2,rule sequence) - 1 is the mask for 'all except this rule' 
 WHERE ir.cohort_definition_id = 398
 ;
 
 -- calculate totals
-delete from @result_database_schema.cohort_summary_stats where cohort_definition_id = 398 and mode_id = 1;
-insert into @result_database_schema.cohort_summary_stats (cohort_definition_id, base_count, final_count, mode_id)
+delete from @results_database_schema.cohort_summary_stats where cohort_definition_id = 398 and mode_id = 1;
+insert into @results_database_schema.cohort_summary_stats (cohort_definition_id, base_count, final_count, mode_id)
 select 398 as cohort_definition_id, PC.total as person_count, coalesce(FC.total, 0) as final_count, 1 as mode_id
 FROM
 (select count_big(event_id) as total from #best_events) PC,
 (select sum(sr.person_count) as total
-  from @result_database_schema.cohort_inclusion_result sr
-  CROSS JOIN (select count(*) as total_rules from @result_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
+  from @results_database_schema.cohort_inclusion_result sr
+  CROSS JOIN (select count(*) as total_rules from @results_database_schema.cohort_inclusion where cohort_definition_id = 398) RuleTotal
   where sr.mode_id = 1 and sr.cohort_definition_id = 398 and sr.inclusion_rule_mask = POWER(cast(2 as bigint),RuleTotal.total_rules)-1
 ) FC
 ;

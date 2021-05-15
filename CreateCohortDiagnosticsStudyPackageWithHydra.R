@@ -123,7 +123,7 @@ for (i in (1:length(listOfCohortJsonsInPackage))) {
                                          cohortId = fileName,
                                          cdmSchema = "@cdm_database_schema",
                                          targetTable = "@target_cohort_table",
-                                         resultSchema = "@result_database_schema",
+                                         resultSchema = "@results_database_schema",
                                          vocabularySchema = "@vocabulary_database_schema",
                                          generateStats = TRUE)
   sql <- CirceR::buildCohortQuery(expression = cohortExpression, options = genOp)
