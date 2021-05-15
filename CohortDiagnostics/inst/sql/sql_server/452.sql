@@ -1202,7 +1202,7 @@ select @target_cohort_id as cohort_definition_id, person_id, start_date, end_dat
 FROM #final_cohort CO
 ;
 
-{0 != 0}?{
+{1 != 0}?{
 -- Find the event that is the 'best match' per person.  
 -- the 'best match' is defined as the event that satisfies the most inclusion rules.
 -- ties are solved by choosing the event that matches the earliest inclusion rule, and then earliest.
