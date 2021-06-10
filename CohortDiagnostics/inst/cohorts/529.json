@@ -1,0 +1,84 @@
+{
+  "ExpressionLimit": {"Type": "First"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [{
+      "isExcluded": false,
+      "concept": {
+        "INVALID_REASON_CAPTION": "Valid",
+        "CONCEPT_ID": 724905,
+        "STANDARD_CONCEPT": "S",
+        "CONCEPT_CODE": "210",
+        "VOCABULARY_ID": "CVX",
+        "CONCEPT_NAME": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-ChAdOx1, preservative free, 0.5 mL",
+        "DOMAIN_ID": "Drug",
+        "STANDARD_CONCEPT_CAPTION": "Standard",
+        "CONCEPT_CLASS_ID": "CVX",
+        "INVALID_REASON": "V"
+      },
+      "includeMapped": false,
+      "includeDescendants": true
+    }]},
+    "name": "AstraZeneca COVID-19 vaccine (Vaxzevria)",
+    "id": 2
+  }],
+  "EndStrategy": {"CustomEra": {
+    "DrugCodesetId": 2,
+    "GapDays": 112,
+    "Offset": 0
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [{
+    "expression": {
+      "CriteriaList": [{
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {"Coeff": -1},
+          "End": {
+            "Days": 365,
+            "Coeff": -1
+          },
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": false,
+        "EndWindow": {
+          "UseEventEnd": true,
+          "Start": {
+            "Days": 0,
+            "Coeff": -1
+          },
+          "End": {"Coeff": 1},
+          "UseIndexEnd": false
+        },
+        "Criteria": {"ObservationPeriod": {}},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      }],
+      "Type": "ALL",
+      "DemographicCriteriaList": [],
+      "Groups": []
+    },
+    "name": "has at least 365d prior observation"
+  }],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DrugExposure": {
+      "CodesetId": 2,
+      "DrugTypeExclude": false
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "First"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

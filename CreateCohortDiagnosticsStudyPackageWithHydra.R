@@ -5,10 +5,11 @@ ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
 
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
   dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |
-                  .data$id %in% c(331:349, 380:411))
+                  stringr::str_detect(string = .data$name, pattern = 'covid vaccine') |
+                  .data$id %in% c(331:349, 380:411, 426:427, 550:554))
 
 ##########################################
-#remotes::install_github("OHDSI/Hydra")
+#remotes::install_github("OHDSI/Hydra",   ref = "develop")
 # outputFolder <- "CohortDiagnostics"  # location where you study package will be created
 library(magrittr)
 
@@ -49,12 +50,12 @@ specifications <- list(id = 1,
                        version = version,
                        name = name,
                        packageName = packageName,
-                       skeletonVersin = skeletonVersion,
+                       skeletonVersion = skeletonVersion,
                        createdBy = createdBy,
                        createdDate = createdDate,
                        modifiedBy = modifiedBy,
                        modifiedDate = modifiedDate,
-                       skeletontype = skeletonType,
+                       skeletonType = skeletonType,
                        organizationName = organizationName,
                        description = description,
                        cohortDefinitions = cohortDefinitionsArray)
@@ -62,24 +63,6 @@ specifications <- list(id = 1,
 jsonFileName <- paste0(file.path(tempFolder, "CohortDiagnosticsSpecs.json"))
 write(x = specifications %>% RJSONIO::toJSON(pretty = TRUE, digits = 23), file = jsonFileName)
 
-
-##############################################################
-##############################################################
-#######       Get skeleton from github            ############
-##############################################################
-##############################################################
-##############################################################
-#### get the skeleton from github
-download.file(url = "https://github.com/OHDSI/SkeletonCohortDiagnosticsStudy/archive/refs/heads/main.zip",
-                         destfile = file.path(tempFolder, 'skeleton.zip'))
-unzip(zipfile =  file.path(tempFolder, 'skeleton.zip'), 
-      overwrite = TRUE,
-      exdir = file.path(tempFolder, "skeleton")
-        )
-fileList <- list.files(path = file.path(tempFolder, "skeleton"), full.names = TRUE, recursive = TRUE, all.files = TRUE)
-DatabaseConnector::createZipFile(zipFile = file.path(tempFolder, 'skeleton.zip'), 
-                                 files = fileList, 
-                                 rootFolder = list.dirs(file.path(tempFolder, 'skeleton'), recursive = FALSE))
 
 ##############################################################
 ##############################################################
@@ -99,37 +82,11 @@ saveRDS(object = hydraSpecificationFromFile, file = file.path(dirname(outputFold
 unlink(x = outputFolder, recursive = TRUE)
 dir.create(path = outputFolder, showWarnings = FALSE, recursive = TRUE)
 Hydra::hydrate(specifications = hydraSpecificationFromFile,
-               outputFolder = outputFolder, 
-               skeletonFileName = file.path(tempFolder, 'skeleton.zip')
+               outputFolder = outputFolder
 )
 
 unlink(x = tempFolder, recursive = TRUE, force = TRUE)
 
-
-## because Hydra does not support generate inclusion stats parameter, we have to use circe to create cohort sql
-# https://github.com/OHDSI/Hydra/issues/21
-
-listOfCohortJsonsInPackage <- list.files(path = file.path(outputFolder, 'inst', 'cohorts'), 
-                                         pattern = ".json", 
-                                         full.names = FALSE, 
-                                         recursive = FALSE)
-for (i in (1:length(listOfCohortJsonsInPackage))) {
-  jsonFromFile <- SqlRender::readSql(sourceFile = file.path(outputFolder, 'inst', 'cohorts', listOfCohortJsonsInPackage[[i]]))
-  cohortExpression <- CirceR::cohortExpressionFromJson(expressionJson = jsonFromFile)
-  fileName <- stringr::str_replace(string = basename(listOfCohortJsonsInPackage[[i]]), 
-                                   pattern = ".json", 
-                                   replacement = "")
-  genOp <- CirceR::createGenerateOptions(
-    # cohortIdFieldName = "cohort_definition_id",
-                                         # cohortId = fileName,
-                                         # cdmSchema = "@cdm_database_schema",
-                                         # targetTable = "@target_cohort_table",
-                                         # resultSchema = "@target_database_schema",
-                                         # vocabularySchema = "@vocabulary_database_schema",
-                                         generateStats = TRUE)
-  sql <- CirceR::buildCohortQuery(expression = cohortExpression, options = genOp)
-  SqlRender::writeSql(sql = sql, targetFile = file.path(outputFolder, 'inst', 'sql', 'sql_server', paste0(fileName, '.sql')))
-}
 
 ##############################################################
 ##############################################################
