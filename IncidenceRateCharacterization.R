@@ -3,9 +3,10 @@ baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
 
 ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
 
-
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
-  dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT'))
+  dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |
+                  stringr::str_detect(string = .data$name, pattern = 'covid vaccine') |
+                  .data$id %in% c(331:349, 380:411, 426:427, 550:554))
 
 # compile them into a data table'\\
 
@@ -38,4 +39,4 @@ for (i in (1:nrow(studyCohorts))) {
 outcomeRef2 <- dplyr::bind_rows(outcomeRef2) %>% 
   dplyr::mutate(fileName = paste0(.data$outcomeId, ".sql"))
 
-readr::write_excel_csv(x = outcomeRef2, file = "inst\\settings\\OutcomeRef.csv", na = '', append = FALSE)
+readr::write_excel_csv(x = outcomeRef2, file = "Covid19VaccineAesiIncidenceCharacterization\\inst\\settings\\OutcomeRef.csv", na = '', append = FALSE)

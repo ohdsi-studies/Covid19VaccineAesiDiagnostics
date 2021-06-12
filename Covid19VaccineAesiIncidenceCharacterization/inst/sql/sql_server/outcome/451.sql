@@ -313,7 +313,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 48))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 48)
 ) C
 
 
@@ -327,7 +327,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 32))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 32)
 ) C
 
 
@@ -341,7 +341,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 31))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 31)
 ) C
 
 
@@ -355,7 +355,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 34))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 34)
 ) C
 
 
@@ -369,7 +369,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 35))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 35)
 ) C
 
 
@@ -383,7 +383,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 36))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 36)
 ) C
 
 
@@ -397,7 +397,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 37))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 37)
 ) C
 
 
@@ -411,7 +411,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 38))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 38)
 ) C
 
 
@@ -425,7 +425,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 39))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 39)
 ) C
 
 
@@ -439,7 +439,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 40))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 40)
 ) C
 
 
@@ -453,7 +453,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 41))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 41)
 ) C
 
 
@@ -467,7 +467,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 43))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 43)
 ) C
 
 
@@ -481,7 +481,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 44))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 44)
 ) C
 
 
@@ -495,7 +495,7 @@ from
 (
   select d.*
   FROM @cdm_database_schema.DEATH d
-JOIN #Codesets codesets on ((d.cause_concept_id = codesets.concept_id and codesets.codeset_id = 45))
+JOIN #Codesets cs on (d.cause_concept_id = cs.concept_id and cs.codeset_id = 45)
 ) C
 
 
@@ -510,7 +510,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 46))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 46)
 ) C
 
 
@@ -573,7 +573,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets cs on (m.measurement_concept_id = cs.concept_id and cs.codeset_id = 2)
 ) C
 
 WHERE (C.value_as_number >= 10.0000 and C.value_as_number <= 150.0000)
@@ -598,7 +598,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets cs on (m.measurement_concept_id = cs.concept_id and cs.codeset_id = 2)
 ) C
 
 WHERE (C.value_as_number >= 10.0000 and C.value_as_number <= 150.0000)
@@ -639,7 +639,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets cs on (m.measurement_concept_id = cs.concept_id and cs.codeset_id = 2)
 ) C
 
 WHERE (C.value_as_number >= 10.0000 and C.value_as_number <= 150.0000)
@@ -666,7 +666,7 @@ from
 (
   select m.* 
   FROM @cdm_database_schema.MEASUREMENT m
-JOIN #Codesets codesets on ((m.measurement_concept_id = codesets.concept_id and codesets.codeset_id = 2))
+JOIN #Codesets cs on (m.measurement_concept_id = cs.concept_id and cs.codeset_id = 2)
 ) C
 
 WHERE (C.value_as_number >= 10.0000 and C.value_as_number <= 150.0000)
@@ -693,7 +693,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 1))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 1)
 ) C
 
 
@@ -749,7 +749,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 48))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 48)
 ) C
 
 
@@ -775,7 +775,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 34))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 34)
 ) C
 
 
@@ -801,7 +801,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 35))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 35)
 ) C
 
 
@@ -827,7 +827,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 36))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 36)
 ) C
 
 
@@ -853,7 +853,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 37))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 37)
 ) C
 
 
@@ -879,7 +879,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 38))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 38)
 ) C
 
 
@@ -905,7 +905,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 39))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 39)
 ) C
 
 
@@ -931,7 +931,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 40))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 40)
 ) C
 
 
@@ -957,7 +957,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 41))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 41)
 ) C
 
 
@@ -983,7 +983,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 44))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 44)
 ) C
 
 
@@ -1009,7 +1009,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 43))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 43)
 ) C
 
 
@@ -1035,7 +1035,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 45))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 45)
 ) C
 
 
@@ -1061,7 +1061,7 @@ FROM
 (
   SELECT co.* 
   FROM @cdm_database_schema.CONDITION_OCCURRENCE co
-  JOIN #Codesets codesets on ((co.condition_concept_id = codesets.concept_id and codesets.codeset_id = 46))
+  JOIN #Codesets cs on (co.condition_concept_id = cs.concept_id and cs.codeset_id = 46)
 ) C
 
 

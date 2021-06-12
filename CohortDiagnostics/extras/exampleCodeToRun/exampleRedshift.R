@@ -2,7 +2,7 @@
 # VARIABLES - please change
 ################################################################################
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "D:/studyResults/ThrombosisWithThrombocytopeniaSyndrome/OHDA"
+outputFolder <- "D:/studyResults/ThrombosisWithThrombocytopeniaSyndrome"
 databaseToRun <- 'truven_ccae'
 
 ############### Note this is a custom script, a version of CodeToRun.R that may not work for everyone ##############

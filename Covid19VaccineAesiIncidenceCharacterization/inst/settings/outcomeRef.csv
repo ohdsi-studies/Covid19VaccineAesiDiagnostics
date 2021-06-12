@@ -1,4 +1,24 @@
 ﻿outcomeId,outcomeCohortDefinitionId,outcomeName,cleanWindow,primaryTimeAtRiskStartOffset,primaryTimeAtRiskStartIndex,primaryTimeAtRiskEndOffset,primaryTimeAtRiskEndIndex,excludedCohortDefinitionId,fileName
+345,345,FDA AESI Narcolepsy events,365,1,0,28,0,0,345.sql
+332,332,FDA AESI febrile seizure pediatric events,365,1,0,28,0,0,332.sql
+426,426,FDA AESI Hemorrhagic stroke events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,426.sql
+349,349,FDA AESI Anaphylaxis events,365,1,0,28,0,0,349.sql
+334,334,FDA AESI Transverse myelitis IPED events,365,1,0,28,0,0,334.sql
+347,347,FDA AESI Bells palsy events,365,1,0,28,0,0,347.sql
+346,346,FDA AESI Encephalomyelitis IP events,365,1,0,28,0,0,346.sql
+344,344,FDA AESI Appendicitis IP events,365,1,0,28,0,0,344.sql
+343,343,FDA AESI Guillain Barre syndrome IP events,365,1,0,28,0,0,343.sql
+341,341,FDA AESI Hemorrhagic stroke IP events,365,1,0,28,0,0,341.sql
+340,340,FDA AESI Acute myocardial infarction IP events,365,1,0,28,0,0,340.sql
+339,339,FDA AESI Myocarditis Pericarditis events,365,1,0,28,0,0,339.sql
+338,338,FDA AESI Deep Vein Thrombosis (DVT) events,365,1,0,28,0,0,338.sql
+337,337,FDA AESI Pulmonary embolism events,365,1,0,28,0,0,337.sql
+336,336,FDA AESI Disseminated intravascular coagulation IP events,365,1,0,28,0,0,336.sql
+335,335,FDA AESI Immune thrombocytopenia (ITP) events,365,1,0,28,0,0,335.sql
+342,342,FDA AESI Non-hemorrhagic stroke broad IP events,365,1,0,28,0,0,342.sql
+333,333,FDA AESI seizure pediatric events,365,1,0,28,0,0,333.sql
+331,331,FDA AESI Kawasaki disease pediatric events,365,1,0,28,0,0,331.sql
+427,427,FDA AESI Appendicitis IPED events,365,1,0,28,0,0,427.sql
 448,448,[TwT] new thrombosis (DVT-Narrow),365,1,0,28,0,0,448.sql
 457,457,[TwT] new thrombosis (Mesenteric vein thrombosis),365,1,0,28,0,0,457.sql
 458,458,[TwT] new thrombosis (Splenic infarction),365,1,0,28,0,0,458.sql
@@ -31,9 +51,41 @@
 480,480,[TwT] Thrombosis (CVST broad diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,480.sql
 481,481,[TwT] Thrombosis (CVST narrow diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,481.sql
 482,482,[TwT] Thrombosis (DVT narrow diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,482.sql
+382,382,FDA AESI Encephalomyelitis events,365,1,0,28,0,0,382.sql
+550,550,FDA AESI Febrile seizure events,365,1,0,28,0,0,550.sql
+383,383,FDA AESI Acute myocardial infarction events,365,1,0,28,0,0,383.sql
 449,449,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events,365,1,0,28,0,0,449.sql
-453,453,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,453.sql
-450,450,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,450.sql
+385,385,FDA AESI Disseminated intravascular coagulation events,365,1,0,28,0,0,385.sql
+348,348,FDA AESI Guillain Barre syndrome IP primary events,365,1,0,28,0,0,348.sql
+380,380,FDA AESI Guillain Barre syndrome events,365,1,0,28,0,0,380.sql
+386,386,FDA AESI Appendicitis events,365,1,0,28,0,0,386.sql
+387,387,FDA AESI Hemorrhagic stroke events,365,1,0,28,0,0,387.sql
+388,388,FDA AESI Acute myocardial infarction IP events FDA source concepts,365,1,0,28,0,0,388.sql
+390,390,FDA AESI Appendicitis IPED events FDA source concepts,365,1,0,28,0,0,390.sql
+392,392,FDA AESI Disseminated intravascular coagulation IPED events FDA source concepts,365,1,0,28,0,0,392.sql
+391,391,FDA AESI Deep Vein Thrombosis (DVT) events FDA source concepts,365,1,0,28,0,0,391.sql
+381,381,FDA AESI Transverse myelitis events,365,1,0,28,0,0,381.sql
+389,389,FDA AESI Anaphylaxis IPED events FDA source concepts,365,1,0,28,0,0,389.sql
+384,384,FDA AESI Non-hemorrhagic stroke broad events,365,1,0,28,0,0,384.sql
+396,396,FDA AESI Hemorrhagic stroke IP events FDA source concepts,365,1,0,28,0,0,396.sql
+393,393,FDA AESI Encephalomyelitis IP events FDA source concepts,365,1,0,28,0,0,393.sql
+394,394,FDA AESI Bells palsy events FDA source concepts,365,1,0,28,0,0,394.sql
+395,395,FDA AESI febrile seizure pediatric events FDA source concepts,365,1,0,28,0,0,395.sql
+397,397,FDA AESI Non-hemorrhagic stroke IP events FDA source concepts,365,1,0,28,0,0,397.sql
+400,400,FDA AESI Pulmonary embolism events FDA source concepts,365,1,0,28,0,0,400.sql
+398,398,FDA AESI Narcolepsy events FDA source concepts,365,1,0,28,0,0,398.sql
+399,399,FDA AESI Myocarditis Pericarditis events FDA source concepts,365,1,0,28,0,0,399.sql
+401,401,FDA AESI Immune thrombocytopenia (ITP) events FDA source concepts,365,1,0,28,0,0,401.sql
+407,407,FDA AESI Anaphylaxis IPED events,365,1,0,28,0,0,407.sql
+405,405,FDA AESI Hemorrhagic stroke IP events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,405.sql
+404,404,FDA AESI Pulmonary Embolism IP events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,404.sql
+403,403,FDA AESI Deep Vein Thrombosis (DVT) IP events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,403.sql
+402,402,FDA AESI Deep Vein Thrombosis (DVT) events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,402.sql
+406,406,FDA AESI non-hemorrhagic stroke IP events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,406.sql
+408,408,FDA AESI non-hemorrhagic stroke events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,408.sql
+409,409,FDA AESI Kawasaki disease events,365,1,0,28,0,0,409.sql
+410,410,FDA AESI febrile seizure events,365,1,0,28,0,0,410.sql
+411,411,FDA AESI Pulmonary Embolism events with conceptset subsuming FDA source concepts,365,1,0,28,0,0,411.sql
 483,483,[TwT] Thrombosis (pulmonary embolism diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,483.sql
 484,484,[TwT] Thrombosis (hepatic thrombosis diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,484.sql
 485,485,[TwT] Thrombosis (splenic vein diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,485.sql
@@ -41,3 +93,34 @@
 487,487,[TwT] Thrombosis (cerebral infarction diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,487.sql
 488,488,[TwT] Thrombosis (hemorrhagic stroke diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,488.sql
 489,489,[TwT] Thrombosis (myocardial infarction diagnosis) with Thrombocytopenia (measurement lt 150) events,365,1,0,28,0,0,489.sql
+523,523,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine May 2021,365,1,0,28,0,0,523.sql
+524,524,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Apr 2021,365,1,0,28,0,0,524.sql
+525,525,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Mar 2021,365,1,0,28,0,0,525.sql
+526,526,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Feb 2021,365,1,0,28,0,0,526.sql
+527,527,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Jan 2021,365,1,0,28,0,0,527.sql
+528,528,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Dec 2020,365,1,0,28,0,0,528.sql
+533,533,[TwT] Thrombosis (Splenic) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,533.sql
+534,534,[TwT] Thrombosis (Portal vein) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,534.sql
+535,535,[TwT] Thrombosis (Hepatic) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,535.sql
+536,536,[TwT] Thrombosis (Intestinal Infarct) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,536.sql
+537,537,[TwT] Thrombosis (other) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,537.sql
+538,538,[TwT] Thrombosis (Pulmonary Embolism) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,538.sql
+539,539,[TwT] Thrombosis (MI) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,539.sql
+540,540,[TwT] Thrombosis (DVT_narrow) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,540.sql
+541,541,[TwT] Thrombosis (Hemorrhagic stroke) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,541.sql
+542,542,[TwT] Thrombosis (ischemic stroke) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,542.sql
+543,543,[TwT] Thrombosis (DVT_broad) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,543.sql
+544,544,[TwT] Thrombosis (CVST_narrow) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,544.sql
+545,545,[TwT] Thrombosis (CVST_broad) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,545.sql
+546,546,[TwT] Thrombosis (Broad diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,546.sql
+547,547,[TwT] Thrombosis (Narrow diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events,365,1,0,28,0,0,547.sql
+548,548,[TwT] Thrombosis (Narrow diagnosis) with ANY platelet measurement,365,1,0,28,0,0,548.sql
+549,549,[TwT] Thrombosis (Narrow diagnosis) with LOW platelet measurement,365,1,0,28,0,0,549.sql
+532,532,[covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine,365,1,0,28,0,0,532.sql
+531,531,[covid vaccine] Persons with exposure to Moderna COVID-19 vaccine,365,1,0,28,0,0,531.sql
+530,530,[covid vaccine] Persons with exposure to Janssen COVID-19 vaccine,365,1,0,28,0,0,530.sql
+529,529,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine,365,1,0,28,0,0,529.sql
+551,551,FDA AESI Generalized Seizure events,365,1,0,28,0,0,551.sql
+552,552,FDA AESI  Narcolepsy events (excluding hypersomnia),365,1,0,28,0,0,552.sql
+553,553,FDA AESI Transverse myelitis (or symptoms with transverse myelitis) events,365,1,0,28,0,0,553.sql
+554,554,FDA AESI Seizure events (without) epilepsy status,365,1,0,28,0,0,554.sql
