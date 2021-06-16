@@ -33,13 +33,21 @@ databaseDescription <-
 
 # Use this to run the study. The results will be stored in a zip file called
 # 'Results_<databaseId>.zip in the outputFolder.
-runStudy(connectionDetails = connectionDetails,
-         cdmDatabaseSchema = cdmDatabaseSchema,
-         cohortDatabaseSchema = cohortDatabaseSchema,
-         cohortTablePrefix = "ir",
-         exportFolder = outputFolder,
-         databaseId = databaseId,
-         databaseName = databaseName,
-         databaseDescription = databaseDescription,
-         incremental = TRUE,
-         minCellCount = minCellCount)
+Covid19VaccineAesiIncidenceCharacterization::runStudy(connectionDetails = connectionDetails,
+                                                      cdmDatabaseSchema = cdmDatabaseSchema,
+                                                      cohortDatabaseSchema = cohortDatabaseSchema,
+                                                      cohortTablePrefix = "ir",
+                                                      exportFolder = outputFolder,
+                                                      databaseId = databaseId,
+                                                      databaseName = databaseName,
+                                                      databaseDescription = databaseDescription,
+                                                      incremental = TRUE,
+                                                      minCellCount = minCellCount)
+
+
+
+# Upload the results to the OHDSI SFTP server:
+privateKeyFileName <- ""
+userName <- ""
+Covid19VaccineAesiIncidenceCharacterization::uploadResults(outputFolder, privateKeyFileName, userName)
+

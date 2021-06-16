@@ -3,7 +3,7 @@
 ################################################################################
 # The folder where the study intermediate and result files will be written:
 outputFolder <- "D:/studyResults/Covid19VaccineAesiIncidenceCharacterization"
-databaseToRun <- 'ims_germany'
+databaseToRun <- 'truven_ccae'
 minCellCount <- 5
 
 ############### Note this is a custom script, a version of CodeToRun.R that may not work for everyone ##############
@@ -120,23 +120,13 @@ dataSourceInformation <- getDataSourceInformation(connectionDetails = connection
 databaseName <- dataSourceInformation$cdmSourceName
 databaseDescription <- dataSourceInformation$sourceDescription
 
-runStudy(connectionDetails = connectionDetails,
-         cdmDatabaseSchema = cdmDatabaseSchema,
-         cohortDatabaseSchema = cohortDatabaseSchema,
-         cohortTablePrefix = "ir",
-         exportFolder = file.path(outputFolder, databaseId),
-         databaseId = databaseId,
-         databaseName = databaseName,
-         databaseDescription = databaseDescription,
-         incremental = TRUE,
-         minCellCount = minCellCount)
-
-CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = outputFolder)
-
-CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = outputFolder)
-
-
-# Upload the results to the OHDSI SFTP server:
-privateKeyFileName <- ""
-userName <- ""
-uploadResults(outputFolder, privateKeyFileName, userName)
+Covid19VaccineAesiIncidenceCharacterization::runStudy(connectionDetails = connectionDetails,
+                                                      cdmDatabaseSchema = cdmDatabaseSchema,
+                                                      cohortDatabaseSchema = cohortDatabaseSchema,
+                                                      cohortTablePrefix = "ir",
+                                                      exportFolder = file.path(outputFolder, databaseId),
+                                                      databaseId = databaseId,
+                                                      databaseName = databaseName,
+                                                      databaseDescription = databaseDescription,
+                                                      incremental = TRUE,
+                                                      minCellCount = minCellCount)
