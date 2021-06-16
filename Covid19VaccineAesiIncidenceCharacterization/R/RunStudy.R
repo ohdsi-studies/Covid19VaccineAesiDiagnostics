@@ -64,22 +64,21 @@ runStudy <- function(connectionDetails = NULL,
     on.exit(DatabaseConnector::disconnect(connection))
   }
 
-  # Create the reference tables  -----------------------------------------------------------------------
+  # Create the reference tables -----------------------------------------------------------------------
   ParallelLogger::logInfo("**********************************************************")
   ParallelLogger::logInfo("  ---- Creating reference tables  ---- ")
   ParallelLogger::logInfo("**********************************************************")
   createRefTablesSql <- SqlRender::loadRenderTranslateSql("CreateRefTables.sql",
-                                    packageName = getThisPackageName(),
-                                    dbms = connection@dbms,
-                                    tempEmulationSchema = tempEmulationSchema,
-                                    warnOnMissingParameters = TRUE,
-                                    cohort_database_schema = cohortDatabaseSchema,
-                                    summary_table = summaryTable,
-                                    target_ref_table = targetRefTable,
-                                    subgroup_ref_table = subgroupRefTable,
-                                    outcome_ref_table = outcomeRefTable,
-                                    time_at_risk_table = timeAtRiskTable
-                                    )
+                                                          packageName = getThisPackageName(),
+                                                          dbms = connection@dbms,
+                                                          tempEmulationSchema = tempEmulationSchema,
+                                                          warnOnMissingParameters = TRUE,
+                                                          cohort_database_schema = cohortDatabaseSchema,
+                                                          summary_table = summaryTable,
+                                                          target_ref_table = targetRefTable,
+                                                          subgroup_ref_table = subgroupRefTable,
+                                                          outcome_ref_table = outcomeRefTable,
+                                                          time_at_risk_table = timeAtRiskTable)
   DatabaseConnector::executeSql(connection = connection,
                                 sql = createRefTablesSql,
                                 progressBar = TRUE,
@@ -122,11 +121,9 @@ runStudy <- function(connectionDetails = NULL,
   }
 
   if (nrow(subgroupCohorts) > 0) {
-    # In the case that the package is running in incremental mode,
-    # the vector instantiatedTargetCohortIds will contain a list
-    # of cohorts that were generated in this run. If any of the
-    # target cohorts are re-generated, the subgroups must be
-    # regenerated.
+    # In the case that the package is running in incremental mode, the vector instantiatedTargetCohortIds
+    # will contain a list of cohorts that were generated in this run. If any of the target cohorts are
+    # re-generated, the subgroups must be regenerated.
     doIncremental <- ifelse(length(instantiatedTargetCohortIds) == 0, yes = TRUE, no = FALSE)
     ParallelLogger::logInfo("**********************************************************")
     ParallelLogger::logInfo("  ---- Creating subgroup cohorts ---- ")
@@ -142,14 +139,13 @@ runStudy <- function(connectionDetails = NULL,
                          createCohortTable = TRUE,
                          incremental = doIncremental,
                          incrementalFolder = incrementalFolder,
-                         target_ref_table = subgroupRefTable) # NOTE: Extra param target_ref_table
+                         target_ref_table = subgroupRefTable)  # NOTE: Extra param target_ref_table
   }
 
   if (nrow(outcomeCohorts) > 0) {
-    # The outcome ref file is a little different from the others
-    # so this step aims to normalize it to the other format of
-    # cohortId, cohortName, fileName
-    outcomeCohortsToCreate <- outcomeCohorts[,c("outcomeId", "outcomeName", "fileName")]
+    # The outcome ref file is a little different from the others so this step aims to normalize it to the
+    # other format of cohortId, cohortName, fileName
+    outcomeCohortsToCreate <- outcomeCohorts[, c("outcomeId", "outcomeName", "fileName")]
     names(outcomeCohortsToCreate) <- c("cohortId", "cohortName", "fileName")
 
     ParallelLogger::logInfo("**********************************************************")
@@ -200,15 +196,15 @@ runStudy <- function(connectionDetails = NULL,
                        time_at_risk_end_index = timeAtRisk$time_at_risk_end_index[i])
     }
   }
-  
+
   # Run the IR analysis ------------------------------------------------------------
   ParallelLogger::logInfo("**********************************************************")
   ParallelLogger::logInfo("  ---- Computing & Export Incidence Analysis ---- ")
   ParallelLogger::logInfo("**********************************************************")
   computeAndExportIncidenceAnalysis(connection,
                                     exportFolder,
-                                    tempEmulationSchema, 
-                                    cdmDatabaseSchema, 
+                                    tempEmulationSchema,
+                                    cdmDatabaseSchema,
                                     cohortDatabaseSchema,
                                     targetCohortTable,
                                     targetRefTable,
@@ -221,7 +217,7 @@ runStudy <- function(connectionDetails = NULL,
                                     summaryTable,
                                     minCellCount)
 
-  
+
   # Save database metadata ---------------------------------------------------------------
   ParallelLogger::logInfo("Saving database metadata")
   op <- getObservationPeriodDateRange(connection,
@@ -237,7 +233,7 @@ runStudy <- function(connectionDetails = NULL,
                          maxObsPeriodDate = op$maxObsPeriodDate,
                          isMetaAnalysis = 0)
   writeToCsv(database, file.path(exportFolder, "database.csv"))
-  
+
   # Save package metadata ---------------------------------------------------------------
   ParallelLogger::logInfo("Saving package metadata")
   packageVersionNumber <- packageVersion(getThisPackageName())
@@ -245,37 +241,35 @@ runStudy <- function(connectionDetails = NULL,
                                 packageVersion = packageVersionNumber,
                                 executionDate = start,
                                 params = RJSONIO::toJSON(list(targetCohortTable = targetCohortTable,
-                                                              targetRefTable = targetRefTable,
-                                                              subgroupCohortTable = subgroupCohortTable,
-                                                              subgroupRefTable = subgroupRefTable,
-                                                              outcomeCohortTable = outcomeCohortTable,
-                                                              outcomeRefTable = outcomeRefTable,
-                                                              timeAtRiskTable = timeAtRiskTable,
-                                                              summaryTable = summaryTable,
-                                                              exportFolder = exportFolder,
-                                                              databaseId = databaseId,
-                                                              databaseName = databaseName,
-                                                              databaseDescription = databaseDescription,
-                                                              minCellCount = minCellCount,
-                                                              incremental = incremental,
-                                                              incrementalFolder = incrementalFolder)))
+                                                                                                                                                              targetRefTable = targetRefTable,
+                                                                                                                                                              subgroupCohortTable = subgroupCohortTable,
+                                                                                                                                                              subgroupRefTable = subgroupRefTable,
+                                                                                                                                                              outcomeCohortTable = outcomeCohortTable,
+                                                                                                                                                              outcomeRefTable = outcomeRefTable,
+                                                                                                                                                              timeAtRiskTable = timeAtRiskTable,
+                                                                                                                                                              summaryTable = summaryTable,
+                                                                                                                                                              exportFolder = exportFolder,
+                                                                                                                                                              databaseId = databaseId,
+                                                                                                                                                              databaseName = databaseName,
+                                                                                                                                                              databaseDescription = databaseDescription,
+                                                                                                                                                              minCellCount = minCellCount,
+                                                                                                                                                              incremental = incremental,
+                                                                                                                                                              incrementalFolder = incrementalFolder)))
   writeToCsv(packageMetadata, file.path(exportFolder, "package.csv"))
-  
-  
+
+
   # Export to zip file -------------------------------------------------------------------------------
   zipName <- zipResults(exportFolder, databaseId)
   ParallelLogger::logInfo("Results are ready for sharing at:", zipName)
-  
+
   delta <- Sys.time() - start
-  ParallelLogger::logInfo(paste("Running study took",
-                                round(delta, 2),
-                                attr(delta, "units")))
+  ParallelLogger::logInfo(paste("Running study took", round(delta, 2), attr(delta, "units")))
 }
 
-computeAndExportIncidenceAnalysis <- function(connection, 
+computeAndExportIncidenceAnalysis <- function(connection,
                                               exportFolder,
-                                              tempEmulationSchema, 
-                                              cdmDatabaseSchema, 
+                                              tempEmulationSchema,
+                                              cdmDatabaseSchema,
                                               cohortDatabaseSchema,
                                               targetCohortTable,
                                               targetRefTable,
@@ -287,21 +281,28 @@ computeAndExportIncidenceAnalysis <- function(connection,
                                               databaseName,
                                               summaryTable,
                                               minCellCount) {
-  
-  # Run the analyses as specified in the settings/analysisSettings.json file 
-  analysisListFile <- system.file("settings/analysisSettings.json", package = getThisPackageName(), mustWork = TRUE)
-  analysisListJsonFromFile <- paste(readLines(analysisListFile),collapse="\n");
+
+  # Run the analyses as specified in the settings/analysisSettings.json file
+  analysisListFile <- system.file("settings/analysisSettings.json",
+                                  package = getThisPackageName(),
+                                  mustWork = TRUE)
+  analysisListJsonFromFile <- paste(readLines(analysisListFile), collapse = "\n")
   analysisList <- RJSONIO::fromJSON(analysisListJsonFromFile)
-  
-  
-  for(i in 1:length(analysisList$analysisList)) {
-    ParallelLogger::logInfo(paste0("(", i, "/", length(analysisList$analysisList), "): ", analysisList$analysisList[[i]]$name))
+
+
+  for (i in 1:length(analysisList$analysisList)) {
+    ParallelLogger::logInfo(paste0("(",
+                                   i,
+                                   "/",
+                                   length(analysisList$analysisList),
+                                   "): ",
+                                   analysisList$analysisList[[i]]$name))
     targetIds <- analysisList$analysisList[[i]]$targetIds
     subgroupIds <- analysisList$analysisList[[i]]$subgroupIds
     timeAtRiskIds <- analysisList$analysisList[[i]]$timeAtRiskIds
     outcomeIds <- analysisList$analysisList[[i]]$outcomeIds
-    
-    
+
+
     runIncidenceAnalysisSql <- SqlRender::loadRenderTranslateSql("runIncidenceAnalysis.sql",
                                                                  packageName = getThisPackageName(),
                                                                  dbms = connection@dbms,
@@ -337,11 +338,11 @@ computeAndExportIncidenceAnalysis <- function(connection,
                                                                warnOnMissingParameters = TRUE,
                                                                cohort_database_schema = cohortDatabaseSchema,
                                                                summary_table = summaryTable)
-  
+
   results <- DatabaseConnector::querySql(connection = connection,
                                          sql = getIncidenceAnalysisSql,
                                          snakeCaseToCamelCase = TRUE)
-  
+
   # Censor the results
   ParallelLogger::logInfo("Censoring results")
   fieldsToCensor <- c("numPersonsWOutcomePreExclude",
@@ -351,11 +352,16 @@ computeAndExportIncidenceAnalysis <- function(connection,
   for (i in 1:length(fieldsToCensor)) {
     results <- enforceMinCellValue(results, fieldsToCensor[i], minCellCount)
   }
-  
+
   writeToCsv(results, file.path(exportFolder, "incidence_analysis.csv"))
 }
 
-insertRefEntries <- function(connection, sqlFile, cohortDatabaseSchema, tableName, tempEmulationSchema, ...) {
+insertRefEntries <- function(connection,
+                             sqlFile,
+                             cohortDatabaseSchema,
+                             tableName,
+                             tempEmulationSchema,
+                             ...) {
   sql <- SqlRender::loadRenderTranslateSql(sqlFile,
                                            packageName = getThisPackageName(),
                                            dbms = connection@dbms,

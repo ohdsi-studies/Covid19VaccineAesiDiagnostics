@@ -17,7 +17,7 @@ setwd(outputFolder)
 runStudy(connectionDetails = connectionDetails,
          cdmDatabaseSchema = cdmDatabaseSchema,
          cohortDatabaseSchema = cohortDatabaseSchema,
-         cohortTablePrefix = 'ir',
+         cohortTablePrefix = "ir",
          exportFolder = outputFolder,
          databaseId = databaseId,
          databaseName = databaseId,
