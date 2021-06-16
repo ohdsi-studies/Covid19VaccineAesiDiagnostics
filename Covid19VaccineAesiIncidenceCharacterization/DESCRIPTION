@@ -1,12 +1,14 @@
 Package: Covid19VaccineAesiIncidenceCharacterization
 Type: Package
 Title: COVID-19 Vaccine AESI Incidence Characterization
-Version: 1.1.1
+Version: 1.0.0
 Authors@R: c(
-	person("Anthony", "Sena", , "asena5@its.jnj.com", role = c("aut", "cre")),
+	person("Gowtham", "Rao", , "rao@ohdsi.org", role = c("aut", "cre")),
+	person("Azza", "Shoaibi", role = c("aut"),
+	person("Anthony", "Sena", role = c("aut"),
 	person("Patick", "Ryan", role = c("aut"))
 	)
-Maintainer: Anthony G. Sena <asena5@its.jnj.com>
+Maintainer: Gowtham Rao <rao@ohdsi.org>
 Description: COVID-19 Vaccine AESI Incidence Characterization
 License: file LICENSE
 VignetteBuilder: knitr
