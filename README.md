@@ -1,7 +1,7 @@
 Covid 19 Vaccine Aesi Diagnostics
 =============
 
-<img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Repo Created">
+<img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Design Finalized">
 
 - Analytics use case(s): **Characterization**
 - Study type: **Clinical Application**
@@ -73,7 +73,7 @@ How to run
 	# For some database platforms (e.g. Oracle): define a schema that can be used to emulate temp tables:
 	options(sqlRenderTempEmulationSchema = NULL)
 	
-	runCohortDiagnostics(connectionDetails = connectionDetails,
+	Covid19VaccineAesiDiagnostics::execute(connectionDetails = connectionDetails,
             cdmDatabaseSchema = cdmDatabaseSchema,
             cohortDatabaseSchema = cohortDatabaseSchema,
             cohortTable = cohortTable,
