@@ -3,7 +3,7 @@
 ################################################################################
 # The folder where the study intermediate and result files will be written:
 outputFolder <- "D:/studyResults/Covid19VaccineAesiIncidenceCharacterization"
-databaseToRun <- 'truven_ccae'
+databaseToRun <- 'ims_germany'
 minCellCount <- 5
 
 ############### Note this is a custom script, a version of CodeToRun.R that may not work for everyone ##############
@@ -124,7 +124,7 @@ runStudy(connectionDetails = connectionDetails,
          cdmDatabaseSchema = cdmDatabaseSchema,
          cohortDatabaseSchema = cohortDatabaseSchema,
          cohortTablePrefix = "ir",
-         exportFolder = outputFolder,
+         exportFolder = file.path(outputFolder, databaseId),
          databaseId = databaseId,
          databaseName = databaseName,
          databaseDescription = databaseDescription,
