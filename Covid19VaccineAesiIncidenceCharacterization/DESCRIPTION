@@ -4,9 +4,9 @@ Title: COVID-19 Vaccine AESI Incidence Characterization
 Version: 1.0.0
 Authors@R: c(
 	person("Gowtham", "Rao", , "rao@ohdsi.org", role = c("aut", "cre")),
-	person("Azza", "Shoaibi", role = c("aut"),
-	person("Anthony", "Sena", role = c("aut"),
-	person("Patick", "Ryan", role = c("aut"))
+	person("Azza", "Shoaibi", role = c("aut")),
+	person("Anthony", "Sena", role = c("aut")),
+	person("Patrick", "Ryan", role = c("aut"))
 	)
 Maintainer: Gowtham Rao <rao@ohdsi.org>
 Description: COVID-19 Vaccine AESI Incidence Characterization
