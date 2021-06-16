@@ -2,12 +2,12 @@
 # VARIABLES - please change
 ################################################################################
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "D:/studyResults/ThrombosisWithThrombocytopeniaSyndrome"
+outputFolder <- "D:/studyResults/Covid19VaccineAesiDiagnostics"
 databaseToRun <- 'truven_ccae'
 
 ############### Note this is a custom script, a version of CodeToRun.R that may not work for everyone ##############
 ############### Please use CodeToRun.R as it a more generic version  ###############################################
-library(ThrombosisWithThrombocytopeniaSyndrome)
+library(Covid19VaccineAesiDiagnostics)
 library(magrittr)
 
 # Optional: specify where the temporary files (used by the Andromeda package) will be created:
@@ -77,7 +77,7 @@ cohortTable <-
   paste0("s",
          connectionSpecifications$sourceId,
          "_",
-         "ThrombosisWithThrombocytopeniaSyndrome")
+         "Covid19VaccineAesiDiagnostics")
 
 # Some meta-information that will be used by the export function:
 databaseId <- connectionSpecifications$database

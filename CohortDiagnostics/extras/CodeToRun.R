@@ -1,4 +1,4 @@
-library(ThrombosisWithThrombocytopeniaSyndrome)
+library(Covid19VaccineAesiDiagnostics)
 
 # Optional: specify where the temporary files (used by the Andromeda package) will be created:
 options(andromedaTempFolder = "s:/andromedaTemp")
@@ -7,7 +7,7 @@ options(andromedaTempFolder = "s:/andromedaTemp")
 maxCores <- parallel::detectCores()
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/ThrombosisWithThrombocytopeniaSyndrome"
+outputFolder <- "s:/Covid19VaccineAesiDiagnostics"
 
 # Details for connecting to the server:
 connectionDetails <-
@@ -36,7 +36,7 @@ databaseDescription <-
 # For some database platforms (e.g. Oracle): define a schema that can be used to emulate temp tables:
 options(sqlRenderTempEmulationSchema = NULL)
 
-ThrombosisWithThrombocytopeniaSyndrome::execute(
+Covid19VaccineAesiDiagnostics::execute(
         connectionDetails = connectionDetails,
         cdmDatabaseSchema = cdmDatabaseSchema,
         cohortDatabaseSchema = cohortDatabaseSchema,
@@ -56,4 +56,4 @@ CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = outputFolder)
 # Upload the results to the OHDSI SFTP server:
 privateKeyFileName <- ""
 userName <- ""
-ThrombosisWithThrombocytopeniaSyndrome::uploadResults(outputFolder, privateKeyFileName, userName)
+Covid19VaccineAesiDiagnostics::uploadResults(outputFolder, privateKeyFileName, userName)

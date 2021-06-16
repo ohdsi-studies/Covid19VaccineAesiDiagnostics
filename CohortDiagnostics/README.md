@@ -1,4 +1,4 @@
-ThrombosisWithThrombocytopeniaSyndrome
+Covid19VaccineAesiDiagnostics
 ==============================
 
 
@@ -26,7 +26,7 @@ How to run
 3. Once installed, you can execute the study by modifying and using the code below. For your convenience, this code is also provided under `extras/CodeToRun.R`:
 
 	```r
-	library(ThrombosisWithThrombocytopeniaSyndrome)
+	library(Covid19VaccineAesiDiagnostics)
 	
 	# Optional: specify where the temporary files (used by the Andromeda package) will be created:
 	options(andromedaTempFolder = "s:/andromedaTemp")
@@ -35,7 +35,7 @@ How to run
 	maxCores <- parallel::detectCores()
 	
 	# The folder where the study intermediate and result files will be written:
-	outputFolder <- "c:/ThrombosisWithThrombocytopeniaSyndrome"
+	outputFolder <- "c:/Covid19VaccineAesiDiagnostics"
 	
 	# Details for connecting to the server:
 	# See ?DatabaseConnector::createConnectionDetails for help
@@ -93,11 +93,11 @@ How to run
 
 License
 =======
-The ThrombosisWithThrombocytopeniaSyndrome package is licensed under Apache License 2.0
+The Covid19VaccineAesiDiagnostics package is licensed under Apache License 2.0
 
 Development
 ===========
-ThrombosisWithThrombocytopeniaSyndrome was developed in ATLAS and R Studio.
+Covid19VaccineAesiDiagnostics was developed in ATLAS and R Studio.
 
 ### Development status
 

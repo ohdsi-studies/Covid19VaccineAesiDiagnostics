@@ -5,11 +5,11 @@
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "ThrombosisWithThrombocytopeniaSyndrome"
+		"find": "Covid19VaccineAesiDiagnostics"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "ThrombosisWithThrombocytopeniaSyndrome"
+		"find": "Covid19VaccineAesiDiagnostics"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",
