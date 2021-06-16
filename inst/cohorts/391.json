@@ -1,0 +1,847 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553773,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.463",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of calf muscular vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45538456,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.622",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of deep veins of left upper extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45601094,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.621",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of deep veins of right upper extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45548082,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.629",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of deep veins of unspecified upper extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45543233,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.623",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of deep veins of upper extremity, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45533508,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.413",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of femoral vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45605849,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.423",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of iliac vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45562404,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.220",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of inferior vena cava",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553772,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.462",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left calf muscular vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45586635,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.412",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left femoral vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45538454,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.422",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left iliac vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553767,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.452",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left peroneal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45552851,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.432",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left popliteal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45552852,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.442",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of left tibial vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45596253,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.492",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of other specified deep vein of left lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45567235,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.493",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of other specified deep vein of lower extremity, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45533510,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.491",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of other specified deep vein of right lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45538455,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.499",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of other specified deep vein of unspecified lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553768,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.453",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of peroneal vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45596251,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.433",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of popliteal vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553771,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.461",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right calf muscular vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45581820,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.411",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right femoral vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45548080,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.421",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right iliac vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553766,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.451",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right peroneal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45562405,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.431",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right popliteal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45596252,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.441",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of right tibial vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45581821,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.443",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of tibial vein, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553774,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.469",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified calf muscular vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45605851,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Z3",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of distal lower extremity, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45572139,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Z2",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of left distal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45538453,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.402",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of left lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45572138,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Y2",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of left proximal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45576922,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.403",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of lower extremity, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45576923,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Y3",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of proximal lower extremity, bilateral",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45557597,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Z1",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of right distal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45543229,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.401",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of right lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45601089,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Y1",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of right proximal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45586636,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Z9",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of unspecified distal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45567234,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.409",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of unspecified lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45605850,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.4Y9",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified deep veins of unspecified proximal lower extremity",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45605848,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.419",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified femoral vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45596250,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.429",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified iliac vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1553769,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.459",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified peroneal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45533509,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.439",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified popliteal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45562406,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.449",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Acute embolism and thrombosis of unspecified tibial vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "6-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 35207891,
+          "STANDARD_CONCEPT": "N",
+          "CONCEPT_CODE": "I82.3",
+          "VOCABULARY_ID": "ICD10CM",
+          "CONCEPT_NAME": "Embolism and thrombosis of renal vein",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+          "CONCEPT_CLASS_ID": "4-char billing code",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": false
+      }
+    ]},
+    "name": "Deep vein thrombosis FDA ICD10CM source concepts",
+    "id": 1
+  }],
+  "EndStrategy": {"DateOffset": {
+    "DateField": "StartDate",
+    "Offset": 1
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "All"},
+  "InclusionRules": [{
+    "expression": {
+      "CriteriaList": [{
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": {
+            "Days": 365,
+            "Coeff": -1
+          },
+          "End": {
+            "Days": 1,
+            "Coeff": -1
+          },
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": true,
+        "Criteria": {"ConditionOccurrence": {
+          "ConditionTypeExclude": false,
+          "ConditionSourceConcept": 1
+        }},
+        "Occurrence": {
+          "Type": 0,
+          "IsDistinct": false,
+          "Count": 0
+        }
+      }],
+      "Type": "ALL",
+      "DemographicCriteriaList": [],
+      "Groups": []
+    },
+    "name": "has no events in prior 'clean window' - 365 days"
+  }],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "ConditionSourceConcept": 1
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}
