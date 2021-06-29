@@ -53,7 +53,7 @@ keyringServerServicePostGresUpload <- 'shinydbServer'
 keyringPortServicePostGresUpload <- 'shinydbPort'
 
 # lets get meta information for each of these databaseId. This includes connection information.
-source("extras/examplesOfCodeToRun/dataSourceInformation.R")
+source("extras/exampleCodeToRun/dataSourceInformation.R")
 
 ## if uploading to co-ordinator site
 privateKeyFileName <- ""

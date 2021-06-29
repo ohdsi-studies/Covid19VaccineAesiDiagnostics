@@ -30,7 +30,7 @@ execute <- function(x) {
   if (x$generateCohortTableName) {
     cohortTableName <- paste0(
       stringr::str_squish(x$databaseId),
-      stringr::str_squish('SkeletonCohortDiagnosticsStudy')
+      stringr::str_squish('Covid19VaccineAesiDiagnostics')
     )
   }
   
@@ -91,7 +91,7 @@ execute <- function(x) {
   )
   DatabaseConnector::disconnect(connection)
   
-  SkeletonCohortDiagnosticsStudy::execute(
+  Covid19VaccineAesiDiagnostics::execute(
     connectionDetails = connectionDetails,
     cdmDatabaseSchema = cdmDatabaseSchema,
     cohortDatabaseSchema = cohortDatabaseSchema,
