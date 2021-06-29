@@ -10,7 +10,7 @@ Covid 19 Vaccine Aesi Diagnostics
 - Study lead forums tag: **[[Azza_Shoaibi]](https://forums.ohdsi.org/u/Azza_Shoaibi)**
 - Study start date: **06/16/2021**
 - Study end date: **07/30/2021**
-- Protocol: **-**
+- Protocol: **[[Vaccine_safety_sensitivity_protocol_BEST_v2]](https://github.com/ohdsi-studies/Covid19VaccineAesiDiagnostics/blob/master/extras/Protocol/Vaccine_safety_sensitivity_protocol_BEST_v2.1_06292021.docx)**
 - Publications: **-**
 - Results explorer: **-**
 
