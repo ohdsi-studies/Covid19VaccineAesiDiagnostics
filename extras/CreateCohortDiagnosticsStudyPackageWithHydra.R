@@ -4,8 +4,8 @@ baseUrlWebApi <- Sys.getenv("baseUrlAtlasOhdsiOrg")
 ROhdsiWebApi::setAuthHeader(baseUrl = baseUrlWebApi, authHeader = BearerToken)
 
 studyCohorts <- ROhdsiWebApi::getCohortDefinitionsMetaData(baseUrl = baseUrlWebApi) %>% 
-  dplyr::filter(stringr::str_detect(string = .data$name, pattern = 'TwT') |
-                  stringr::str_detect(string = .data$name, pattern = 'covid vaccine') |
+  dplyr::filter(stringr::str_detect(string = tolower(.data$name), pattern = 'twt') |
+                  stringr::str_detect(string = tolower(.data$name), pattern = 'covid vaccine') |
                   .data$id %in% c(331:349, 380:411, 426:427, 550:554))
 
 ##########################################
@@ -16,7 +16,7 @@ library(magrittr)
 ########## Please populate the information below #####################
 version <- "v0.1.0"
 name <- "Adverse Events of Special Interest related to Covid 19 vaccination - an OHDSI network study"
-packageName <- "ThrombosisWithThrombocytopeniaSyndrome"
+packageName <- "Covid19VaccineAesiDiagnostics"
 skeletonVersion <- "v0.0.1"
 createdBy <- "rao@ohdsi.org"
 createdDate <- Sys.Date() # default

@@ -51,6 +51,7 @@ atlasId,cohortId,id,cohortName
 480,480,480,[TwT] Thrombosis (CVST broad diagnosis) with Thrombocytopenia (measurement lt 150) events
 481,481,481,[TwT] Thrombosis (CVST narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
 482,482,482,[TwT] Thrombosis (DVT narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
+505,505,505,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine May 2021
 382,382,382,FDA AESI Encephalomyelitis events
 550,550,550,FDA AESI Febrile seizure events
 383,383,383,FDA AESI Acute myocardial infarction events
@@ -93,6 +94,23 @@ atlasId,cohortId,id,cohortName
 487,487,487,[TwT] Thrombosis (cerebral infarction diagnosis) with Thrombocytopenia (measurement lt 150) events
 488,488,488,[TwT] Thrombosis (hemorrhagic stroke diagnosis) with Thrombocytopenia (measurement lt 150) events
 489,489,489,[TwT] Thrombosis (myocardial infarction diagnosis) with Thrombocytopenia (measurement lt 150) events
+506,506,506,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine April 2021
+507,507,507,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine March 2021
+508,508,508,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Feb 2021
+509,509,509,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Jan 2021
+510,510,510,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Dec 2020
+511,511,511,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine May 2021
+512,512,512,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine April 2021
+513,513,513,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine March 2021
+514,514,514,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Feb 2021
+515,515,515,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Dec 2020
+516,516,516,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Jan 2021
+517,517,517,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine May 2021
+518,518,518,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine April 2021
+519,519,519,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Feb 2021
+520,520,520,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine March 2021
+521,521,521,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Jan 2021
+522,522,522,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Dec 2020
 523,523,523,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine May 2021
 524,524,524,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Apr 2021
 525,525,525,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Mar 2021

@@ -1,19 +1,5 @@
-Covid 19 Vaccine Aesi Diagnostics
-=============
-
-<img src="https://img.shields.io/badge/Study%20Status-Repo%20Created-lightgray.svg" alt="Study Status: Design Finalized">
-
-- Analytics use case(s): **Characterization**
-- Study type: **Clinical Application**
-- Tags: **Covid 19**
-- Study lead: **Azza Shoaibi**
-- Study lead forums tag: **[[Azza_Shoaibi]](https://forums.ohdsi.org/u/Azza_Shoaibi)**
-- Study start date: **06/16/2021**
-- Study end date: **07/30/2021**
-- Protocol: **[[Vaccine_safety_sensitivity_protocol_BEST_v2]](https://github.com/ohdsi-studies/Covid19VaccineAesiDiagnostics/blob/master/extras/Protocol/Vaccine_safety_sensitivity_protocol_BEST_v2.1_06292021.docx)**
-- Publications: **-**
-- Results explorer: **-**
-
+Covid19VaccineAesiDiagnostics
+==============================
 
 
 Requirements
@@ -73,7 +59,7 @@ How to run
 	# For some database platforms (e.g. Oracle): define a schema that can be used to emulate temp tables:
 	options(sqlRenderTempEmulationSchema = NULL)
 	
-	Covid19VaccineAesiDiagnostics::execute(connectionDetails = connectionDetails,
+	runCohortDiagnostics(connectionDetails = connectionDetails,
             cdmDatabaseSchema = cdmDatabaseSchema,
             cohortDatabaseSchema = cohortDatabaseSchema,
             cohortTable = cohortTable,
