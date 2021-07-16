@@ -10,7 +10,7 @@ library(magrittr)
 # VARIABLES - please change
 ################################################################################
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "D:/studyResults/Covid19VaccineAesiDiagnostics"
+outputFolder <- "D:/studyResults/Covid19VaccineAesiDiagnostics22"
 # create output directory if it does not exist
 if (!dir.exists(outputFolder)) {
   dir.create(outputFolder,
@@ -21,10 +21,10 @@ if (!dir.exists(outputFolder)) {
 # options(andromedaTempFolder = "s:/andromedaTemp")
 
 # set to false if email is not possible
-mailFatal <- TRUE
+mailFatal <- FALSE
 
 # do you want to upload the results to a local database
-uploadToLocalPostGresDatabase <- TRUE
+uploadToLocalPostGresDatabase <- FALSE
 
 ############## databaseIds to run cohort diagnostics on that source  #################
 databaseIds <-
