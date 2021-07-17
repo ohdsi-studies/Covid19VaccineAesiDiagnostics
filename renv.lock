@@ -399,10 +399,14 @@
 			"Repository" : "CRAN"
 		},
 		"ParallelLogger" : {
-			"Package" : "ParallelLogger",
-			"Version" : "2.0.1",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
+		  "Package" : "ParallelLogger",
+			"Version" : "2.0.2",
+			"Source" : "GitHub",
+			"RemoteType" : "github",
+			"RemoteHost" : "api.github.com",
+			"RemoteRepo" : "ParallelLogger",
+			"RemoteUsername" : "ohdsi",
+			"RemoteRef" : "develop"
 		},
 		"readr" : {
 			"Package" : "readr",
@@ -706,7 +710,7 @@
 			"RemoteHost" : "api.github.com",
 			"RemoteRepo" : "CohortDiagnostics",
 			"RemoteUsername" : "ohdsi",
-			"RemoteRef" : "testathon"
+			"RemoteRef" : "develop"
 		},
 		"OhdsiSharing" : {
 			"Package" : "OhdsiSharing",
