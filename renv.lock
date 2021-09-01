@@ -141,12 +141,6 @@
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
-		"askpass" : {
-			"Package" : "askpass",
-			"Version" : "1.1",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
-		},
 		"assertthat" : {
 			"Package" : "assertthat",
 			"Version" : "0.2.1",
@@ -288,12 +282,6 @@
 		"munsell" : {
 			"Package" : "munsell",
 			"Version" : "0.5.0",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
-		},
-		"openssl" : {
-			"Package" : "openssl",
-			"Version" : "1.4.4",
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
@@ -464,21 +452,9 @@
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
-		"sodium" : {
-			"Package" : "sodium",
-			"Version" : "1.1",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
-		},
 		"yaml" : {
 			"Package" : "yaml",
 			"Version" : "2.2.1",
-			"Source" : "Repository",
-			"Repository" : "CRAN"
-		},
-		"keyring" : {
-			"Package" : "keyring",
-			"Version" : "1.2.0",
 			"Source" : "Repository",
 			"Repository" : "CRAN"
 		},
