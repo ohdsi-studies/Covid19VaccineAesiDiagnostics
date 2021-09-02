@@ -1,36 +1,11 @@
-ROhdsiWebApi::authorizeWebApi(Sys.getenv('baseUrl'), "windows") # Windows authentication - if security enabled using windows authentication
-
-
-cdmSources <-
-  ROhdsiWebApi::getCdmSources(baseUrl = Sys.getenv('baseUrl')) %>%
-  dplyr::mutate(
-    baseUrl = Sys.getenv('baseUrl'),
-    dbms = 'redshift',
-    sourceDialect = 'redshift',
-    port = 5439,
-    version = .data$sourceKey %>% substr(., nchar(.) - 3, nchar(.)) %>% as.integer(),
-    database = .data$sourceKey %>% substr(., 5, nchar(.) - 6)
-  ) %>%
-  dplyr::group_by(.data$database) %>%
-  dplyr::arrange(dplyr::desc(.data$version)) %>%
-  dplyr::mutate(sequence = dplyr::row_number()) %>%
-  dplyr::ungroup() %>%
-  dplyr::arrange(.data$database, .data$sequence) %>%
-  dplyr::mutate(server = tolower(paste0(
-    Sys.getenv("serverRoot"), "/", .data$database
-  ))) %>%
-  dplyr::mutate(cohortDatabaseSchema = paste0("scratch_", keyring::key_get(service = keyringUserService))) %>%
-  dplyr::filter(database %in% databaseIds) %>%
-  dplyr::filter(sequence == 1)
-
-
+source(Sys.getenv("startUpScriptLocation"))
 
 ######
-execute <- function(x) {
+executeOnMultipleDataSources <- function(x) {
   if (x$generateCohortTableName) {
     cohortTableName <- paste0(
       stringr::str_squish(x$databaseId),
-      stringr::str_squish('Covid19VaccineAesiDiagnostics')
+      stringr::str_squish("Covid19VaccineAesiDiagnostics")
     )
   }
   
@@ -51,15 +26,61 @@ execute <- function(x) {
               sql = sqlCdmDataSource,
               cdmDatabaseSchema = cdmDatabaseSchema,
               snakeCaseToCamelCase = TRUE
-            )
+            ) %>% dplyr::tibble()
           if (nrow(cdmDataSource) == 0) {
             return(sourceInfo)
           }
-          if (sourceDescription %in% colnames(cdmDataSource)) {
-            sourceInfo$sourceDescription <- cdmDataSource$sourceDescription
+          sourceInfo$sourceDescription <- ""
+          if ("sourceDescription" %in% colnames(cdmDataSource)) {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " ",
+                                                   cdmDataSource$sourceDescription) %>% 
+              stringr::str_trim()
           }
-          if (cdmSourceName %in% colnames(cdmDataSource)) {
+          if ("cdmSourceName" %in% colnames(cdmDataSource)) {
             sourceInfo$cdmSourceName <- cdmDataSource$cdmSourceName
+          }
+          if ("cdmEtlReference" %in% colnames(cdmDataSource)) {
+            if (length(cdmDataSource$cdmEtlReference) > 4) {
+              sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                     " ETL Reference: ",
+                                                     cdmDataSource$cdmEtlReference) %>% 
+                stringr::str_trim()
+            } else {
+              sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                     " ETL Reference: None") %>% 
+                stringr::str_trim()
+            }
+          }
+          if ("sourceReleaseDate" %in% colnames(cdmDataSource)) {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " CDM release date: ",
+                                                   as.character(cdmDataSource$sourceReleaseDate)) %>% 
+              stringr::str_trim()
+          } else {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " CDM release date: None") %>% 
+              stringr::str_trim()
+          }
+          if ("sourceReleaseDate" %in% colnames(cdmDataSource)) {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " Source release date: ",
+                                                   as.character(cdmDataSource$sourceReleaseDate)) %>% 
+              stringr::str_trim()
+          } else {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " Source release date: None") %>% 
+              stringr::str_trim()
+          }
+          if ("sourceDocumentationReference" %in% colnames(cdmDataSource)) {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " Source Documentation Reference: ",
+                                                   as.character(cdmDataSource$sourceDocumentationReference)) %>% 
+              stringr::str_trim()
+          } else {
+            sourceInfo$sourceDescription <- paste0(sourceInfo$sourceDescription,
+                                                   " Source Documentation Reference: None") %>% 
+              stringr::str_trim()
           }
         },
         error = function(...) {
@@ -99,18 +120,18 @@ execute <- function(x) {
     verifyDependencies = x$verifyDependencies,
     outputFolder = x$outputFolder,
     databaseId = x$databaseId,
-    databaseName = dataSourceDetails$databaseName,
-    databaseDescription = dataSourceDetails$databaseDescription
+    databaseName = dataSourceDetails$cdmSourceName,
+    databaseDescription = dataSourceDetails$sourceDescription
   )
   
   if (x$preMergeDiagnosticsFiles) {
     CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = x$outputFolder)
   }
   
-  if (length(x$privateKeyFileName) > 0 && 
-      !x$privateKeyFileName == '' &&
+  if (length(x$privateKeyFileName) > 0 &&
+      !x$privateKeyFileName == "" &&
       length(x$userName) > 0 &&
-      !x$userName == '') {
+      !x$userName == "") {
     CohortDiagnostics::uploadResults(x$outputFolder,
                                      x$privateKeyFileName,
                                      x$userName)
@@ -119,7 +140,8 @@ execute <- function(x) {
   if (length(x$uploadToLocalPostGresDatabaseSpecifications) > 1) {
     # Set the POSTGRES_PATH environmental variable to the path to the folder containing the psql executable to enable bulk upload (recommended).
     
-    connectionPostGres <- DatabaseConnector::connect(x$uploadToLocalPostGresDatabaseSpecifications$connectionDetails)
+    connectionPostGres <-
+      DatabaseConnector::connect(x$uploadToLocalPostGresDatabaseSpecifications$connectionDetails)
     
     # check if schema was instantiated
     sqlSchemaCheck <-
@@ -129,15 +151,13 @@ execute <- function(x) {
         "';"
       )
     schemaExists <-
-      DatabaseConnector::renderTranslateQuerySql(
-        connection = connectionPostGres,
-        sql = sqlSchemaCheck
-      )
+      DatabaseConnector::renderTranslateQuerySql(connection = connectionPostGres,
+                                                 sql = sqlSchemaCheck)
     
     if (nrow(schemaExists) == 0) {
       warning(
         paste0(
-          'While attempting to upload to postgres, found target schema to not exist - attempting to create target schema ',
+          "While attempting to upload to postgres, found target schema to not exist - attempting to create target schema ",
           x$uploadToLocalPostGresDatabaseSpecifications$schema
         )
       )
@@ -147,16 +167,17 @@ execute <- function(x) {
           tolower(x$uploadToLocalPostGresDatabaseSpecifications$schema),
           ");"
         )
-      DatabaseConnector::renderTranslateQuerySql(
-        connection = connectionPostGres,
-        sql = createSchemaSql
-      )
+      DatabaseConnector::renderTranslateQuerySql(connection = connectionPostGres,
+                                                 sql = createSchemaSql)
       ParallelLogger::logInfo("Schema created.")
       
     }
     # check if required table exists, else create them
-    if (!DatabaseConnector::dbExistsTable(conn = connectionPostGres, name = 'cohort_count')) {
-      CohortDiagnostics::createResultsDataModel(connection = connectionPostGres, schema = tolower(x$uploadToLocalPostGresDatabaseSpecifications$schema))
+    if (!DatabaseConnector::dbExistsTable(conn = connectionPostGres, name = "cohort_count")) {
+      CohortDiagnostics::createResultsDataModel(
+        connection = connectionPostGres,
+        schema = tolower(x$uploadToLocalPostGresDatabaseSpecifications$schema)
+      )
     }
     
     DatabaseConnector::disconnect(connection = connectionPostGres)

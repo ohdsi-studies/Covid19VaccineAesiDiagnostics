@@ -10,7 +10,7 @@ library(magrittr)
 # VARIABLES - please change
 ################################################################################
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "D:/studyResults/Covid19VaccineAesiDiagnostics"
+outputFolder <- "D:/studyResults/Covid19VaccineAesiDiagnosticsP"
 # create output directory if it does not exist
 if (!dir.exists(outputFolder)) {
   dir.create(outputFolder,
@@ -21,10 +21,10 @@ if (!dir.exists(outputFolder)) {
 # options(andromedaTempFolder = "s:/andromedaTemp")
 
 # set to false if email is not possible
-mailFatal <- TRUE
+mailFatal <- FALSE
 
 # do you want to upload the results to a local database
-uploadToLocalPostGresDatabase <- TRUE
+uploadToLocalPostGresDatabase <- FALSE
 
 ############## databaseIds to run cohort diagnostics on that source  #################
 databaseIds <-
@@ -53,7 +53,10 @@ keyringServerServicePostGresUpload <- 'shinydbServer'
 keyringPortServicePostGresUpload <- 'shinydbPort'
 
 # lets get meta information for each of these databaseId. This includes connection information.
-source("extras/exampleCodeToRun/dataSourceInformation.R")
+source(file.path("extras", "examplesOfCodeToRun", "dataSourceInformation.R"))
+cdmSources <- cdmSources2
+rm("cdmSources2")
+
 
 ## if uploading to co-ordinator site
 privateKeyFileName <- ""
@@ -64,6 +67,7 @@ x <- list()
 for (i in (1:length(databaseIds))) {
   databaseId <- databaseIds[[i]]
   cdmSource <- cdmSources %>%
+    dplyr::filter(.data$sequence == 1) %>% 
     dplyr::filter(database == databaseId)
   
   if (uploadToLocalPostGresDatabase) {
@@ -79,7 +83,7 @@ for (i in (1:length(databaseIds))) {
         user = keyring::key_get(keyringUserServicePostGresUpload),
         password = keyring::key_get(keyringPasswordServicePostGresUpload)
       ),
-      schema = 'SkeletonCohortDiagnosticsStudy',
+      schema = 'Covid19VaccineAesiDiagnostics',
       zipFileName = list.files(
         path = file.path(outputFolder, databaseId),
         pattern = paste0("Results_", databaseId, ".zip"),
@@ -147,7 +151,7 @@ if (mailFatal) {
 
 ParallelLogger::clusterApply(cluster = cluster,
                              x = x,
-                             fun = execute)
+                             fun = executeOnMultipleDataSources)
 
 writeLines(readChar(paste0(loggerName, ".txt"), file.info(paste0(loggerName, ".txt"))$size))
 ParallelLogger::stopCluster(cluster = cluster)

@@ -21,10 +21,10 @@ if (!dir.exists(outputFolder)) {
 # options(andromedaTempFolder = "s:/andromedaTemp")
 
 # set to false if email is not possible
-mailFatal <- TRUE
+mailFatal <- FALSE
 
 # do you want to upload the results to a local database
-uploadToLocalPostGresDatabase <- TRUE
+uploadToLocalPostGresDatabase <- FALSE
 
 ############## databaseIds to run cohort diagnostics on that source  #################
 databaseIds <-
@@ -53,7 +53,9 @@ keyringServerServicePostGresUpload <- 'shinydbServer'
 keyringPortServicePostGresUpload <- 'shinydbPort'
 
 # lets get meta information for each of these databaseId. This includes connection information.
-source("extras/exampleCodeToRun/dataSourceInformation.R")
+source("extras/examplesOfCodeToRun/dataSourceInformation.R")
+cdmSources <- cdmSources2
+rm("cdmSources2")
 
 ## if uploading to co-ordinator site
 privateKeyFileName <- ""
@@ -64,6 +66,7 @@ x <- list()
 for (i in (1:length(databaseIds))) {
   databaseId <- databaseIds[[i]]
   cdmSource <- cdmSources %>%
+    dplyr::filter(.data$sequence == 1) %>% 
     dplyr::filter(database == databaseId)
   
   if (uploadToLocalPostGresDatabase) {
@@ -107,9 +110,36 @@ for (i in (1:length(databaseIds))) {
 }
 
 
-############ execute #################
+############ executeOnMultipleDataSources #################
 # x <- x[1:2]
 
 for (i in (1:length(x))) {
-  execute(x[[i]])
+  executeOnMultipleDataSources(x[[i]])
 }
+# 
+# # launch cohort explorer
+# for (i in (1:length(x))) {
+#   cohortTableName <- paste0(
+#     stringr::str_squish(x$databaseId),
+#     stringr::str_squish("SkeletonCohortDiagnosticsStudy")
+#   )
+#   # Details for connecting to the server:
+#   connectionDetails <-
+#     DatabaseConnector::createConnectionDetails(
+#       dbms = x$cdmSource$dbms,
+#       server = x$cdmSource$server,
+#       user = keyring::key_get(service = x$userService),
+#       password =  keyring::key_get(service = x$passwordService),
+#       port = x$cdmSource$port
+#     )
+#   cdmDatabaseSchema <- x$cdmSource$cdmDatabaseSchema
+#   cohortDatabaseSchema <- x$cdmSource$cohortDatabaseSchema
+#   CohortDiagnostics::launchCohortExplorer(connectionDetails = connectionDetails,
+#                                           cdmDatabaseSchema = cdmDatabaseSchema,
+#                                           cohortDatabaseSchema = cohortDatabaseSchema,
+#                                           cohortTable = cohortTable, 
+#                                           cohortId = -1
+#   )
+# }
+# 
+# 
