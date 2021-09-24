@@ -1,25 +1,16 @@
 atlasId,cohortId,id,cohortName
-345,345,345,FDA AESI Narcolepsy events
-332,332,332,FDA AESI febrile seizure pediatric events
-426,426,426,FDA AESI Hemorrhagic stroke events with conceptset subsuming FDA source concepts
-349,349,349,FDA AESI Anaphylaxis events
-334,334,334,FDA AESI Transverse myelitis IPED events
-347,347,347,FDA AESI Bells palsy events
-346,346,346,FDA AESI Encephalomyelitis IP events
-344,344,344,FDA AESI Appendicitis IP events
-343,343,343,FDA AESI Guillain Barre syndrome IP events
-341,341,341,FDA AESI Hemorrhagic stroke IP events
-340,340,340,FDA AESI Acute myocardial infarction IP events
-339,339,339,FDA AESI Myocarditis Pericarditis events
 338,338,338,FDA AESI Deep Vein Thrombosis (DVT) events
-337,337,337,FDA AESI Pulmonary embolism events
-336,336,336,FDA AESI Disseminated intravascular coagulation IP events
-335,335,335,FDA AESI Immune thrombocytopenia (ITP) events
-342,342,342,FDA AESI Non-hemorrhagic stroke broad IP events
-333,333,333,FDA AESI seizure pediatric events
-331,331,331,FDA AESI Kawasaki disease pediatric events
-427,427,427,FDA AESI Appendicitis IPED events
+391,391,391,FDA AESI Deep Vein Thrombosis (DVT) events FDA source concepts
+402,402,402,FDA AESI Deep Vein Thrombosis (DVT) events with conceptset subsuming FDA source concepts
+403,403,403,FDA AESI Deep Vein Thrombosis (DVT) IP events with conceptset subsuming FDA source concepts
+430,430,430,[TwT] Thrombocytopenia events (diagnosis broad or platelet lt 150)
 448,448,448,[TwT] new thrombosis (DVT-Narrow)
+449,449,449,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
+451,451,451,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 150) events
+452,452,452,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 120) events
+454,454,454,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
+455,455,455,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
+456,456,456,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 120) events
 457,457,457,[TwT] new thrombosis (Mesenteric vein thrombosis)
 458,458,458,[TwT] new thrombosis (Splenic infarction)
 459,459,459,[TwT] new thrombosis (Intestinal infarction)
@@ -33,60 +24,18 @@ atlasId,cohortId,id,cohortName
 467,467,467,[TwT] new thrombosis (PE)
 468,468,468,[TwT] new thrombosis (DVT-Broad)
 469,469,469,[TwT] new thrombosis (CVST-Narrow)
-475,475,475,[TwT] Thrombocytopenia events (platelet lt 150)
-430,430,430,[TwT] Thrombocytopenia events (diagnosis broad or platelet lt 150)
+470,470,470,[TwT] new thrombosis (CVST-Broad)
+472,472,472,[TwT] Thrombocytopenia events (diagnosis narrow or platelet lt 150)
 473,473,473,[TwT] Thrombocytopenia events (diagnosis broad)
 474,474,474,[TwT] Thrombocytopenia events (diagnosis narrow)
-472,472,472,[TwT] Thrombocytopenia events (diagnosis narrow or platelet lt 150)
+475,475,475,[TwT] Thrombocytopenia events (platelet lt 150)
 476,476,476,[TwT] Thrombocytopenia events (platelet lt 120)
 477,477,477,[TwT] Thrombocytopenia events (platelet lt 100)
 478,478,478,[TwT] Thrombosis (broad diagnosis) events
 479,479,479,[TwT] Thrombosis (narrow diagnosis) events
-470,470,470,[TwT] new thrombosis (CVST-Broad)
-456,456,456,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 120) events
-455,455,455,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
-454,454,454,[TwT] Thrombosis (narrow diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
-452,452,452,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 120) events
-451,451,451,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (measurement lt 150) events
 480,480,480,[TwT] Thrombosis (CVST broad diagnosis) with Thrombocytopenia (measurement lt 150) events
 481,481,481,[TwT] Thrombosis (CVST narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
 482,482,482,[TwT] Thrombosis (DVT narrow diagnosis) with Thrombocytopenia (measurement lt 150) events
-505,505,505,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine May 2021
-382,382,382,FDA AESI Encephalomyelitis events
-550,550,550,FDA AESI Febrile seizure events
-383,383,383,FDA AESI Acute myocardial infarction events
-449,449,449,[TwT] Thrombosis (broad diagnosis) with Thrombocytopenia (broad diagnosis or measurement) events
-385,385,385,FDA AESI Disseminated intravascular coagulation events
-348,348,348,FDA AESI Guillain Barre syndrome IP primary events
-380,380,380,FDA AESI Guillain Barre syndrome events
-386,386,386,FDA AESI Appendicitis events
-387,387,387,FDA AESI Hemorrhagic stroke events
-388,388,388,FDA AESI Acute myocardial infarction IP events FDA source concepts
-390,390,390,FDA AESI Appendicitis IPED events FDA source concepts
-392,392,392,FDA AESI Disseminated intravascular coagulation IPED events FDA source concepts
-391,391,391,FDA AESI Deep Vein Thrombosis (DVT) events FDA source concepts
-381,381,381,FDA AESI Transverse myelitis events
-389,389,389,FDA AESI Anaphylaxis IPED events FDA source concepts
-384,384,384,FDA AESI Non-hemorrhagic stroke broad events
-396,396,396,FDA AESI Hemorrhagic stroke IP events FDA source concepts
-393,393,393,FDA AESI Encephalomyelitis IP events FDA source concepts
-394,394,394,FDA AESI Bells palsy events FDA source concepts
-395,395,395,FDA AESI febrile seizure pediatric events FDA source concepts
-397,397,397,FDA AESI Non-hemorrhagic stroke IP events FDA source concepts
-400,400,400,FDA AESI Pulmonary embolism events FDA source concepts
-398,398,398,FDA AESI Narcolepsy events FDA source concepts
-399,399,399,FDA AESI Myocarditis Pericarditis events FDA source concepts
-401,401,401,FDA AESI Immune thrombocytopenia (ITP) events FDA source concepts
-407,407,407,FDA AESI Anaphylaxis IPED events
-405,405,405,FDA AESI Hemorrhagic stroke IP events with conceptset subsuming FDA source concepts
-404,404,404,FDA AESI Pulmonary Embolism IP events with conceptset subsuming FDA source concepts
-403,403,403,FDA AESI Deep Vein Thrombosis (DVT) IP events with conceptset subsuming FDA source concepts
-402,402,402,FDA AESI Deep Vein Thrombosis (DVT) events with conceptset subsuming FDA source concepts
-406,406,406,FDA AESI non-hemorrhagic stroke IP events with conceptset subsuming FDA source concepts
-408,408,408,FDA AESI non-hemorrhagic stroke events with conceptset subsuming FDA source concepts
-409,409,409,FDA AESI Kawasaki disease events
-410,410,410,FDA AESI febrile seizure events
-411,411,411,FDA AESI Pulmonary Embolism events with conceptset subsuming FDA source concepts
 483,483,483,[TwT] Thrombosis (pulmonary embolism diagnosis) with Thrombocytopenia (measurement lt 150) events
 484,484,484,[TwT] Thrombosis (hepatic thrombosis diagnosis) with Thrombocytopenia (measurement lt 150) events
 485,485,485,[TwT] Thrombosis (splenic vein diagnosis) with Thrombocytopenia (measurement lt 150) events
@@ -94,29 +43,6 @@ atlasId,cohortId,id,cohortName
 487,487,487,[TwT] Thrombosis (cerebral infarction diagnosis) with Thrombocytopenia (measurement lt 150) events
 488,488,488,[TwT] Thrombosis (hemorrhagic stroke diagnosis) with Thrombocytopenia (measurement lt 150) events
 489,489,489,[TwT] Thrombosis (myocardial infarction diagnosis) with Thrombocytopenia (measurement lt 150) events
-506,506,506,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine April 2021
-507,507,507,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine March 2021
-508,508,508,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Feb 2021
-509,509,509,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Jan 2021
-510,510,510,[Covid vaccine] Persons with exposure to Janssen COVID-19 vaccine Dec 2020
-511,511,511,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine May 2021
-512,512,512,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine April 2021
-513,513,513,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine March 2021
-514,514,514,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Feb 2021
-515,515,515,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Dec 2020
-516,516,516,[Covid vaccine] Persons with exposure to Moderna COVID-19 vaccine Jan 2021
-517,517,517,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine May 2021
-518,518,518,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine April 2021
-519,519,519,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Feb 2021
-520,520,520,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine March 2021
-521,521,521,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Jan 2021
-522,522,522,[Covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine Dec 2020
-523,523,523,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine May 2021
-524,524,524,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Apr 2021
-525,525,525,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Mar 2021
-526,526,526,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Feb 2021
-527,527,527,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Jan 2021
-528,528,528,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine Dec 2020
 533,533,533,[TwT] Thrombosis (Splenic) with Thrombocytopenia (narrow diagnosis or measurement) events
 534,534,534,[TwT] Thrombosis (Portal vein) with Thrombocytopenia (narrow diagnosis or measurement) events
 535,535,535,[TwT] Thrombosis (Hepatic) with Thrombocytopenia (narrow diagnosis or measurement) events
@@ -134,11 +60,3 @@ atlasId,cohortId,id,cohortName
 547,547,547,[TwT] Thrombosis (Narrow diagnosis) with Thrombocytopenia (narrow diagnosis or measurement) events
 548,548,548,[TwT] Thrombosis (Narrow diagnosis) with ANY platelet measurement
 549,549,549,[TwT] Thrombosis (Narrow diagnosis) with LOW platelet measurement
-532,532,532,[covid vaccine] Persons with exposure to Pfizer COVID-19 vaccine
-531,531,531,[covid vaccine] Persons with exposure to Moderna COVID-19 vaccine
-530,530,530,[covid vaccine] Persons with exposure to Janssen COVID-19 vaccine
-529,529,529,[covid vaccine] Persons with exposure to AstraZeneca COVID-19 vaccine
-551,551,551,FDA AESI Generalized Seizure events
-552,552,552,FDA AESI Narcolepsy events (excluding hypersomnia)
-553,553,553,FDA AESI Transverse myelitis (or symptoms with transverse myelitis) events
-554,554,554,FDA AESI Seizure events (without) epilepsy status
