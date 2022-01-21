@@ -41,7 +41,7 @@ Covid19VaccineAesiDiagnostics::execute(
         cdmDatabaseSchema = cdmDatabaseSchema,
         cohortDatabaseSchema = cohortDatabaseSchema,
         cohortTable = cohortTable,
-        verifyDependencies = TRUE,
+        verifyDependencies = FALSE,
         outputFolder = outputFolder,
         databaseId = databaseId,
         databaseName = databaseName,
