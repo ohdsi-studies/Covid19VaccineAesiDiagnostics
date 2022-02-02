@@ -1,6 +1,6 @@
 # enviroment paths
 working_directory <- "/workdir"
-study_package_directory <- "/workdir/Covid19SubjectsAesiIncidenceRate"
+study_package_directory <- "/workdir/Covid19VaccineAesiDiagnostics"
 r_env_cache_folder <- "/workdir/renv_cache"
 renv_package_version <- '0.13.2'
 renv_vesion <- "v5"
